@@ -20,12 +20,12 @@ nav:
 
 # Footer icons (also used for the "Profiles" line on Home).
 social:
-  - { url: "mailto:pongelup@wharton.upenn.edu", icon: icon-email.png, alt: "Email Leandro S. Pongeluppe", label: "Email" }
+  - { url: "mailto:pongelup@wharton.upenn.edu", icon: icon-email.svg, alt: "Email Leandro S. Pongeluppe", label: "Email" }
   - { url: "https://mgmt.wharton.upenn.edu/profile/pongelup/", icon: icon-wharton.svg, alt: "Wharton faculty profile of Leandro S. Pongeluppe", label: "Wharton faculty page" }
   - { url: "https://scholar.google.com/citations?user=aHN4BioAAAAJ&hl=en", icon: icon-scholar.svg, alt: "Leandro S. Pongeluppe on Google Scholar", label: "Google Scholar" }
   - { url: "https://orcid.org/0000-0001-6195-4455", icon: icon-orcid.svg, alt: "ORCID iD 0000-0001-6195-4455", label: "ORCID" }
   - { url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7017320", icon: icon-ssrn.svg, alt: "Leandro S. Pongeluppe on SSRN", label: "SSRN" }
-  - { url: "https://www.linkedin.com/in/leandro-s-pongeluppe-15b09513/", icon: icon-linkedin.png, alt: "Leandro S. Pongeluppe on LinkedIn", label: "LinkedIn" }
+  - { url: "https://www.linkedin.com/in/leandro-s-pongeluppe-15b09513/", icon: icon-linkedin.svg, alt: "Leandro S. Pongeluppe on LinkedIn", label: "LinkedIn" }
   - { url: "https://x.com/LSPongeluppe", icon: icon-x.svg, alt: "Leandro S. Pongeluppe on X", label: "X" }
 
 # StatCounter, copied from the Google Sites custom embed (same project, so history continues).
