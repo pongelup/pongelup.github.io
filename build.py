@@ -248,7 +248,22 @@ def check():
     return problems
 
 
+def write_sitemap():
+    """sitemap.xml and robots.txt for search engines (Google Search Console)."""
+    base = "https://www.leandropongeluppe.com"
+    skip = {"news", "404"}  # redirect and error pages are not indexed
+    urls = "".join(f"  <url><loc>{base}{canon}</loc></url>\n"
+                   for key, (_, _, canon) in PAGES.items() if key not in skip)
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n",
+        encoding="utf-8")
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n",
+                                     encoding="utf-8")
+
+
 if __name__ == "__main__":
     if "--check" not in sys.argv:
         build()
+        write_sitemap()
     sys.exit(1 if check() else 0)
