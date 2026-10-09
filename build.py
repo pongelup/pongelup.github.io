@@ -189,10 +189,12 @@ def build():
         "pubs": load("data/publications.yml"),
         "wps": load("data/working_papers.yml"),
         "media": load("data/media.yml"),
-        # cache-busting stamp: changes whenever site.css changes, so browsers fetch the new file
-        # (line endings normalized so the stamp is the same on every machine)
-        "css_version": __import__("hashlib").md5(
-            (ROOT / "assets/css/site.css").read_bytes().replace(bytes([13, 10]), bytes([10]))).hexdigest()[:8],
+        # cache-busting stamp: changes whenever site.css or a footer icon changes, so browsers fetch
+        # the new files (line endings normalized so the stamp is the same on every machine)
+        "css_version": __import__("hashlib").md5(b"".join(
+            f.read_bytes().replace(bytes([13, 10]), bytes([10]))
+            for f in [ROOT / "assets/css/site.css"] + sorted((ROOT / "assets/img").glob("icon-*"))
+        )).hexdigest()[:8],
     }
     shared["news"] = merged_news(load("data/news.yml").get("items") or [], shared["media"])
     shared["home_news"] = home_news(shared["news"])

@@ -62,7 +62,7 @@
   <div class="container footer-inner">
     <div class="social">
       {% for s in site.social %}
-      <a href="{{ s.url }}"{% if not s.url.startswith('mailto:') %} target="_blank" rel="noopener"{% endif %}><img src="{{ base }}/assets/img/{{ s.icon }}" alt="{{ s.alt }}" width="64" height="64"></a>
+      <a href="{{ s.url }}"{% if not s.url.startswith('mailto:') %} target="_blank" rel="noopener"{% endif %}><img src="{{ base }}/assets/img/{{ s.icon }}?v={{ css_version }}" alt="{{ s.alt }}" width="64" height="64"></a>
       {% endfor %}
     </div>
     <p class="last-update">{{ page.last_update }}</p>
