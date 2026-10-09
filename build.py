@@ -38,6 +38,7 @@ BANNER_ALT = {
     "banner-rocinha-gavea-drone.jpg": "Aerial drone view of the border between the Rocinha favela and the Gávea neighborhood in Rio de Janeiro: dense rooftops on one side, houses with pools among trees on the other",
     "banner-rocinha-panorama.jpg": "Panoramic view of the Rocinha favela in Rio de Janeiro, with mountains and the ocean behind it",
     "banner-altamira-agroforest.jpg": "Floor of a cacao agroforest near Altamira, Pará, in the Brazilian Amazon, with seedlings among fallen leaves",
+    "banner-para-2012-river-rainbow.jpg": "Rainbow over a river lined with mangrove forest in Pará, in the Brazilian Amazon, with a small house at the water's edge",
 }
 
 # Photo credits shown on the banner (text, link). A page can override with "banner_credit:" and

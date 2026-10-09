@@ -1,7 +1,7 @@
 # Research page free text. Papers live in data/working_papers.yml and data/publications.yml.
 hero_title: "Research"
 # Banner: any photo in assets/img/ (optional banner_alt: describes it for screen readers).
-banner: banner-altamira-agroforest.jpg
+banner: banner-rocinha-panorama.jpg
 seo_title: "Research | Leandro S. Pongeluppe | Wharton School"
 description: "Research on strategy, stakeholder management, and the Sustainable Development Goals, with fieldwork in Brazilian favelas, the Amazon rainforest, and African health clinics."
 last_update: "Last update: October 2026."
