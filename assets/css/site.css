@@ -44,7 +44,9 @@ small, .small { font-family: var(--sans); font-size: 12px; line-height: 1.45; }
   position: fixed; inset: 0 0 auto 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
   height: 56px; padding: 0 28px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0));
+  /* translucent dark bar so the name and menu stay legible on any banner photo */
+  background: rgba(38,50,56,0.62);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
   transition: background-color 0.2s ease;
 }
 .site-header.scrolled { background: var(--header-solid); }
@@ -57,7 +59,7 @@ small, .small { font-family: var(--sans); font-size: 12px; line-height: 1.45; }
 .site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 26px; }
 .site-nav a {
   color: #fff; text-decoration: none; font-family: var(--sans); font-size: 16px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.45); white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6); white-space: nowrap;
 }
 .site-nav a:hover { color: rgba(255,255,255,0.75); }
 .site-nav a[aria-current="page"] { font-weight: 700; }
