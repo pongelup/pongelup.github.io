@@ -107,7 +107,9 @@ This is automatic: the daily "Website CV Sync" task (see Automation) does steps 
 ## Add a media item
 
 Copy a block in `data/media.yml` to the top of `english` or `portuguese` and edit it. It appears in the
-"News and Media" list on Practice & Media, sorted by its date.
+"News and Media" list on Practice & Media, sorted by its date. Add the same item to the CV
+(`sections/09_media.tex`). The monthly sync also searches for new mentions on its own (see Automation,
+"Media mentions").
 
 ## Rebuild
 
@@ -151,14 +153,14 @@ logged on, start late if a run was missed (StartWhenAvailable), never wake the m
 through `wscript.exe`, like the morning brief.
 
 Scripts live in `<Dropbox>\Softwares\Claude Code\Automation\Website\`: launchers `launch_website_*.vbs`,
-runners `run_website_*.ps1`, shared settings `website_common.ps1`, the Claude prompt
-`website_monthly_sync_prompt.md`, the draft-only Outlook helper `create_sync_draft.ps1`, and the installer
+runners `run_website_*.ps1`, shared settings `website_common.ps1`, the Claude prompts
+`website_monthly_sync_prompt.md` (working papers) and `website_media_search_prompt.md` (media mentions), the draft-only Outlook helper `create_sync_draft.ps1`, and the installer
 `install_website_tasks.ps1`.
 
 | Task | When | What |
 |---|---|---|
 | Website CV Sync | Daily, 06:15 | `python sync_cv.py`: pull the CV Overleaf repo; if it moved, compile with Tectonic, copy the PDF to `assets/cv/`, rebuild, commit, push. No AI. "CV unchanged" is the normal result. |
-| Website Monthly Sync | First Monday of each month, 07:30 | (a) `sync_slides.py`; (b) `claude --print` with `website_monthly_sync_prompt.md`, which brings `data/working_papers.yml` and the CV's `sections/03c_working_papers.tex` in line with the project tracker (`projects.json`) and writes a summary; (c) rebuild and checks; (d) publish (push both repos, then `sync_cv.py`) or hold for approval. |
+| Website Monthly Sync | First Monday of each month, 07:30 | (a) `sync_slides.py`; (b) `claude --print` with `website_monthly_sync_prompt.md`, which brings `data/working_papers.yml` and the CV's `sections/03c_working_papers.tex` in line with the project tracker (`projects.json`) and writes a summary; (b2) if `media_search: true`, a second, separate `claude --print` with `website_media_search_prompt.md` that adds new verified media mentions (see below); (c) rebuild and checks; (d) publish (push both repos, then `sync_cv.py`) or hold for approval. |
 
 **Logs**: `<Dropbox>\Softwares\Claude Code\Automation\Website\Logs\website_cv_sync_<YYYY-MM>.log` and
 `website_monthly_sync_<YYYY-MM>.log` (machine name on every line), plus `_review/sync_cv.log` and
@@ -179,6 +181,28 @@ order second-round R&R, first-round R&R, submitted, working papers; a new paper 
 of setting, data, and approach (no results or numbers) and no figure; tracker labels are never used as titles;
 papers missing from the tracker are kept and listed, never removed silently; papers in `site_exclude` stay in
 the CV but off the site; no forced page breaks in the CV.
+
+**Media mentions** (step b2; switch: `media_search` in `website_sync_config.yml`). A separate headless Claude
+call (tools: WebSearch, WebFetch, Read, Glob, Grep, Write, and Edit except in a dry run), so a failure there
+never affects the working-paper sync: if it writes no summary, the runner reverts its files and notes it, and a
+publish month still publishes the paper changes. It searches the last ~45 days (overlapping the previous run)
+for "Leandro Pongeluppe", "Leandro S. Pongeluppe", "Leo Pongeluppe", and the name combined with his paper topics,
+in English (Knowledge at Wharton, Penn Today, The Conversation, VoxDev, PreventionWeb/UN, EurekAlert!, Phys.org,
+major outlets, podcasts) and in Portuguese (Folha, Estadão, O Globo, Valor, Pipeline Valor, Exame, Nexo, Veja,
+Época Negócios, InfoMoney, Brazil Journal, UOL, G1, CNN Brasil, BBC News Brasil, Agência FAPESP, Jornal da USP,
+Insper, FGV, The Conversation Brasil, CBN, podcasts), with `site:` and Portuguese news-style queries. Every
+candidate is fetched; it is added only if the page loads and names Leo (the quote goes in the summary). Journal
+citations, repositories, directories, social media, and pages that discuss a paper without naming him are not
+added (the last kind is listed under "Needs Leo"). Paywalled or blocked pages are listed as "Could not verify"
+and retried next month. Candidates are deduplicated against `sections/09_media.tex`, `data/media.yml`,
+`data/news.yml`, and `data/media_seen.json`, the list of every URL already reviewed (added, rejected with a
+reason, or flagged), so no item is proposed twice. Kept items go into the CV (`sections/09_media.tex`, right
+language list, date order, `\textit{en.}` / `\textit{pt.}` lines, Portuguese dates as "17 de junho de 2024.")
+and into `data/media.yml` (`lang: en` / `pt`); the site is rebuilt with the rest. Its summary
+(`_review/MEDIA_<YYYY-MM>.md`) is appended to the month's summary and draft as "## Media mentions" (outlet,
+title, date, URL, quote). The edits ride on the same `pending-sync` branches and the same approval gate. A month
+whose only change is `data/media_seen.json` counts as no changes (no draft). The runner also flags any added
+line with an em or en dash.
 
 ### Approving a monthly sync
 
@@ -202,12 +226,17 @@ To approve, tell Claude in an interactive session: "approve the website monthly 
    commits `website_sync_config.yml`, and pushes.
 
 To reject: Claude deletes both `pending-sync` branches and sets the first line to `Status: REJECTED <YYYY-MM-DD>`.
+To reject only some media mentions, Claude removes those items on `pending-sync` before merging and sets their
+`status` in `data/media_seen.json` to `rejected` with Leo's reason. On a full reject, Claude copies the
+`data/media_seen.json` entries from `pending-sync` to `main` (marking the proposed items `rejected`), so they are
+not proposed again.
 A later monthly run resets `pending-sync` from `main` and marks an older pending summary `SUPERSEDED`. At 0 the
 monthly run pushes directly; if a check fails (build, an excluded paper on the site, a forced page break, or a CV
 that does not compile) it falls back to the approval path for that month. If a repo is dirty or off `main` when
 the run starts, it changes nothing and writes a `Status: PENDING` summary that says BLOCKED and why.
 
-**Dry run** (no pull, branch, commit, push, or draft; writes only `_review/DRYRUN_SYNC_<YYYY-MM>.md`):
+**Dry run** (no pull, branch, commit, push, or draft; writes only `_review/DRYRUN_SYNC_<YYYY-MM>.md` and, with
+real web searches, `_review/DRYRUN_MEDIA_<YYYY-MM>.md` listing what would be added; no repo file changes):
 
 ```powershell
 & "C:\Users\pongelup\Dropbox\Softwares\Claude Code\Automation\Website\run_website_monthly_sync.ps1" -DryRun

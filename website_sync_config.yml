@@ -8,6 +8,12 @@
 #   At 0, the monthly run publishes directly (site push, CV push, then sync_cv.py).
 approved_runs_remaining: 2
 
+# media_search: monthly search for new media mentions (English and Portuguese), a separate Claude step
+#   (website_media_search_prompt.md) that adds verified items to the CV (sections/09_media.tex) and to
+#   data/media.yml, and records every reviewed URL in data/media_seen.json. Same approval gate as above.
+#   Set to false to skip it.
+media_search: true
+
 # Papers that stay in the CV but are never shown on the website (matched by title, case-insensitive,
 # ignoring punctuation). The monthly sync never adds these to data/working_papers.yml.
 site_exclude:

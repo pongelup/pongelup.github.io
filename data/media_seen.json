@@ -1,0 +1,4 @@
+{
+  "_comment": "URLs already reviewed by the monthly media search (website_media_search_prompt.md), kept or not, so the same item is never proposed twice. status: added, rejected, or flagged (Needs Leo). Not read by build.py. Items that could not be fetched are not listed here, so the next run retries them.",
+  "items": []
+}
