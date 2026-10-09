@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.seo_title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ site.site_url }}{{ canonical_path }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.site_name }}">
+<meta property="og:title" content="{{ page.seo_title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ site.site_url }}{{ canonical_path }}">
+<meta property="og:image" content="{{ site.site_url }}{{ site.og_image }}">
+<meta property="og:image:alt" content="Leandro S. Pongeluppe, Assistant Professor at the Wharton School">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@LSPongeluppe">
+<meta name="twitter:title" content="{{ page.seo_title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ site.site_url }}{{ site.og_image }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base }}/assets/css/site.css">
+{% if site.ga4_id %}
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.ga4_id }}');</script>
+{% endif %}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+  </button>
+  <a class="site-title" href="{{ base }}/">{{ site.site_name }}</a>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <button class="nav-toggle nav-close" type="button" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg>
+    </button>
+    <ul>
+      {% for item in site.nav %}
+      <li><a href="{{ base }}{{ item.path }}"{% if item.key == active %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="nav-backdrop" hidden></div>
+</header>
+
+<div class="hero">
+  <img class="hero-img" src="{{ base }}/assets/img/{{ page.banner }}" alt="{{ banner_alt }}">
+  <h1>{{ page.hero_title }}</h1>
+  {% if banner_credit and banner_credit[0] %}<p class="hero-credit">{% if banner_credit[1] %}<a href="{{ banner_credit[1] }}" target="_blank" rel="noopener">{{ banner_credit[0] }}</a>{% else %}{{ banner_credit[0] }}{% endif %}</p>{% endif %}
+</div>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="social">
+      {% for s in site.social %}
+      <a href="{{ s.url }}"{% if not s.url.startswith('mailto:') %} target="_blank" rel="noopener"{% endif %}><img src="{{ base }}/assets/img/{{ s.icon }}" alt="{{ s.alt }}" width="64" height="64"></a>
+      {% endfor %}
+    </div>
+    <p class="last-update">{{ page.last_update }}</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var header = document.querySelector('.site-header');
+  var nav = document.getElementById('site-nav');
+  var openBtn = document.querySelector('.site-header > .nav-toggle');
+  var closeBtn = document.querySelector('.nav-close');
+  var backdrop = document.querySelector('.nav-backdrop');
+  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 40); }
+  function setOpen(open) {
+    nav.classList.toggle('open', open);
+    backdrop.hidden = !open;
+    openBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  openBtn.addEventListener('click', function () { setOpen(true); });
+  closeBtn.addEventListener('click', function () { setOpen(false); });
+  backdrop.addEventListener('click', function () { setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+})();
+</script>
+
+<!-- Statcounter code for Leo's Personal Website
+http://www.leandropongeluppe.com (carried over from the Google Sites embed: same project, same security code) -->
+<script type="text/javascript">
+var sc_project={{ site.statcounter.project }};
+var sc_invisible={{ site.statcounter.invisible }};
+var sc_security="{{ site.statcounter.security }}";
+var sc_https={{ site.statcounter.https }};
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/{{ site.statcounter.project }}/0/{{ site.statcounter.security }}/{{ site.statcounter.invisible }}/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

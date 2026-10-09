@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container notfound">
+  <h2>{{ page.heading }}</h2>
+  <p>{{ page.text }}</p>
+  <p>
+    {% for item in site.nav %}<a href="{{ base }}{{ item.path }}">{{ item.label }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}
+  </p>
+</div>
+{% endblock %}

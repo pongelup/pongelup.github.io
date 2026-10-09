@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% macro figure(item) -%}
+{% if item.image and asset_exists('img/' ~ item.image) %}
+<figure class="wp-fig">
+  <img src="{{ base }}/assets/img/{{ item.image }}" alt="{{ item.image_alt }}" loading="lazy">
+  {% if item.caption %}<figcaption><small>{{ item.caption }}</small></figcaption>{% endif %}
+</figure>
+{% endif %}
+{%- endmacro %}
+{% macro pub_entry(p) -%}
+<article class="pub-card">
+  <div>
+    <p class="pub">{{ p.authors }} <a href="{{ p.url }}"><span class="title">{{ p.title }}</span></a> {{ p.after | safe }}{% if p.url and p.url.startswith('/assets/') %} <a class="doi" href="{{ p.url }}">PDF</a>{% endif %}{% if p.doi %} <a class="doi" href="{{ p.doi }}">DOI</a>{% endif %}{% if p.web %} <a class="doi" href="{{ p.web }}">{{ p.web_label }}</a>{% endif %}{% if p.note %}<small class="note">{{ p.note }}</small>{% endif %}</p>
+    {% if p.description %}<p class="pub-desc">{{ p.description }}</p>{% endif %}
+  </div>
+</article>
+{%- endmacro %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <h2>{{ page.interests_heading }}</h2>
+    <p>{{ page.interests | safe }}</p>
+  </section>
+
+  <section class="section" id="research-program">
+    <h2>{{ page.program_heading }}</h2>
+    <p>{{ page.program_intro | safe }}</p>
+    <div class="pillars">
+      {% for p in page.program %}
+      <article class="pillar-card">
+        {% if p.image and asset_exists('img/' ~ p.image) %}
+        <figure class="pillar-fig">
+          <img class="pillar-img" src="{{ base }}/assets/img/{{ p.image }}" alt="{{ p.image_alt }}" loading="lazy">
+          {% if p.credit %}<figcaption class="photo-credit">{% if p.credit_url %}<a href="{{ p.credit_url }}" target="_blank" rel="noopener">{{ p.credit }}</a>{% else %}{{ p.credit }}{% endif %}</figcaption>{% endif %}
+        </figure>
+        {% endif %}
+        <div class="pillar-body">
+          <h3>{{ p.pillar }}</h3>
+          <p>{{ p.text }}</p>
+          {% set icons = [] %}
+          {% for n in p.sdgs or [] %}{% set f = 'img/sdg/sdg_%02d.png' % n %}{% if asset_exists(f) %}{% set _ = icons.append((n, f)) %}{% endif %}{% endfor %}
+          {% if icons %}
+          <div class="sdg-row">
+            {% for n, f in icons %}
+            <a href="https://sdgs.un.org/goals/goal{{ n }}"><img src="{{ base }}/assets/{{ f }}" alt="UN Sustainable Development Goal {{ n }}: {{ page.sdg_names[n] }}" width="56" height="56" loading="lazy"></a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="working-papers">
+    <h2>{{ wps.heading }}</h2>
+    {% for g in wps.groups %}
+    <div class="topic">
+      <h3>{{ g.topic }}</h3>
+      {% for w in g.papers %}
+      {% set has_fig = w.image and asset_exists('img/' ~ w.image) %}
+      <article class="wp{% if not has_fig %} wp-noimg{% endif %}">
+        {{ figure(w) }}
+        <div>
+          <h3>{{ w.title }}</h3>
+          {% if w.coauthors %}<p>{{ w.coauthors }}</p>{% endif %}
+          <p class="status"><small><b>{{ w.status }}</b>{% if w.award %} {{ w.award }}{% endif %}{% for l in w.links or [] %} <a href="{{ l.url }}"><b>{{ l.label }}</b></a>{% endfor %}</small></p>
+          {% if w.description %}<p class="wp-desc">{{ w.description }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="section pubs" id="published-papers">
+    <h2>{{ page.published_heading }}</h2>
+    <h3>{{ page.international_heading }}</h3>
+    {% for p in pubs.international %}{{ pub_entry(p) }}
+    {% endfor %}
+    <h3>{{ page.brazilian_heading }}</h3>
+    {% for p in pubs.brazilian %}{{ pub_entry(p) }}
+    {% endfor %}
+  </section>
+
+  <section class="section pubs" id="book-chapters">
+    <h2>{{ page.chapters_heading }}</h2>
+    {% for p in pubs.book_chapters %}{{ pub_entry(p) }}
+    {% endfor %}
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+# /news/ now redirects to the "News and Media" section of Practice & Media (/extension/#news).
+# The news items still live in data/news.yml; build.py merges them with data/media.yml.
+seo_title: "News and Media | Leandro S. Pongeluppe | Wharton School"
+redirect_to: "/extension/#news"
+text: "News now lives on the Practice & Media page:"
+link_text: "go to News and Media"

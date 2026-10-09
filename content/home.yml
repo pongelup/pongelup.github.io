@@ -1,0 +1,81 @@
+# Home page (served at / and /home/). Bio refreshed from the PR audit of 2026-10-09 (section 3a),
+# with Leo's decisions of the same day (phone, email, Insper Metricis, teaching awards, Portuguese title).
+hero_title: "Welcome!"
+# Banner: any photo in assets/img/ (optional banner_alt: describes it for screen readers).
+banner: banner-rocinha-gavea-drone.jpg
+seo_title: "Leandro S. Pongeluppe | Wharton School"
+description: "Leandro S. Pongeluppe is an Assistant Professor of Management at the Wharton School, University of Pennsylvania. He studies how firms, governments, and communities organize to reduce poverty, protect the environment, and expand access to healthcare."
+last_update: "Last update: October 2026."
+
+headshot: headshot.jpg
+headshot_alt: "Leandro S. Pongeluppe, Assistant Professor at the Wharton School"
+
+contact_heading: "Contact"
+contact: |-
+  <p>2106 Steinberg Hall-Dietrich Hall. 3620 Locust Walk, Philadelphia, PA, USA, 19104-6370.</p>
+  <p>E-mail: <a href="mailto:pongelup@wharton.upenn.edu">pongelup@wharton.upenn.edu</a></p>
+  <p>Phone: +1 (215) 898-7684</p>
+  <p><a class="cv-button" href="/assets/cv/Leandro_Pongeluppe_CV.pdf">Download CV (PDF, updated October 2026)</a></p>
+profiles_heading: "Profiles"
+
+name_heading: "Leandro Simões Pongeluppe"
+intro_heading: "Introduction"
+intro: |-
+  <p>Leandro "Leo" Pongeluppe is a socio-environmental impact specialist, an assistant professor of management at the Wharton School, University of Pennsylvania, and a Leonard J. Horwitz Faculty Scholar. Leo holds a PhD in Strategic Management from the Rotman School of Management, University of Toronto. His primary research interests are related to stakeholder management and socioeconomic development. Particularly, Leo is interested in understanding how organizations’ design and governance affect the achievement of the United Nations' <a href="https://sdgs.un.org/goals">Sustainable Development Goals (SDGs)</a>, such as poverty alleviation, environmental conservation, and healthcare. Leo uses mixed methods in his research, combining econometric causal inference methods with ethnographic techniques to analyze multifaceted problems related to socioeconomic development. His fieldwork spans the Brazilian favelas, the Amazon rainforest, and HIV/AIDS treatment clinics in Africa.</p>
+  <p>Leo's research has been published in <i>Administrative Science Quarterly</i>, <i>Management Science</i>, <i>Strategic Management Journal</i>, the <i>Review of Economics and Statistics</i>, <i>Business Ethics Quarterly</i>, and <i>Academy of Management Discoveries</i>, among other outlets. His work has received the William F. Glueck Best Paper Award from the Academy of Management, the Wiley Blackwell Outstanding Dissertation Award from the Strategic Management Division of the Academy of Management (2023), the <i>Administrative Science Quarterly</i> Dissertation Award (2025), and two Responsible Research in Management Awards. Leo serves on the editorial review boards of the <i>Academy of Management Journal</i>, <i>Organization Science</i>, <i>Strategic Entrepreneurship Journal</i>, <i>Strategic Management Journal</i>, and <i>Strategy Science</i>. At Wharton, he teaches Managing the Established Enterprise in the MBA program, for which he received the Wharton Teaching Excellence Award three times (2023-24, 2024-25, and 2025-26).</p>
+  <p>Professionally, Leo co-founded and worked as a PMO at <a href="https://www.insper.edu.br/pt/pesquisa/centro-de-gestao-e-politicas-publicas/metricis">Insper Metricis</a>, a research group dedicated to evaluating projects' socio-environmental impact, where he remains a research associate. At Insper Metricis, Leo participated in the design of Brazil's first Social Impact Bond (SIB), in partnership with the São Paulo State Government, Sundfeld Attorneys, Social Finance-UK, International Finance Corporation (IFC), and Inter-American Development Bank (IDB). Leo also worked for about three years as an associate researcher at the Accenture Institute for High Performance, on projects related to inclusive innovation and public innovation in Brazil, China, Ghana, India, Mozambique, Nigeria, and South Africa.</p>
+
+# Latest 3 items of the merged news and media list (data/news.yml + data/media.yml); the link goes to the full list.
+news_heading: "News"
+news_more: "All news and media"
+
+program_heading: "Research Program"
+# Short version of the Research Program block (full version on the Research page).
+program:
+  - pillar: "Poverty, inequality, and violence"
+    text: "how firms and public policy shape opportunity in favelas and how violence reshapes multinational business."
+  - pillar: "Climate change"
+    text: "how firms and communities protect the Amazon rainforest and the oceans."
+  - pillar: "Healthcare"
+    text: "how technology and stakeholder management improve care in HIV/AIDS clinics in Africa, and how the Zika epidemic affected families across racial groups in Brazil."
+program_more: "See the full research program"
+
+selected_heading: "Selected Publications"
+# Published papers only; the one-line takeaways come from Leo's seminar deck (2026-09-29).
+selected:
+  - citation: "Pongeluppe, L. S. (2024). <b>The Allegory of the Favela: The Multifaceted Effects of Socioeconomic Mobility.</b> <i>Administrative Science Quarterly</i>, 69(3): 619-654. ASQ Dissertation Award 2025."
+    takeaway: "NGO programs can increase labor market outcomes, but climbing the economic ladder increases psychological distress."
+    doi: "https://doi.org/10.1177/00018392241240469"
+  - citation: "Derksen, L., McGahan, A. M., & Pongeluppe, L. S. (2025). <b>The Lifesaving Impact of Electronic Medical Records for HIV Patients.</b> <i>Review of Economics and Statistics</i>. Published online October 2025."
+    takeaway: "Electronic medical record implementation increased the number of patients in care and reduced deaths by 28% after five years."
+    doi: "https://doi.org/10.1162/rest.a.1617"
+  - citation: "McGahan, A. M., & Pongeluppe, L. S. (2023). <b>There Is No Planet B: Aligning Stakeholder Interests to Preserve the Amazon Rainforest.</b> <i>Management Science</i>, 69(12): 7860-7881. William F. Glueck Best Paper Award."
+    takeaway: "By sharing value with local communities, firms can create Coasean mechanisms that internalize environmental externalities."
+    doi: "https://doi.org/10.1287/mnsc.2023.4884"
+  - citation: "Pongeluppe, L. S. (2022). <b>The Favela Effect: Spatial Inequalities and Firm Strategies in Disadvantaged Urban Communities.</b> <i>Strategic Management Journal</i>, 43(13): 2777-2808."
+    takeaway: "Spatial inequalities reinforce socioeconomic disparities, but stakeholder-oriented firms can moderate this effect."
+    doi: "https://doi.org/10.1002/smj.3414"
+  - citation: "Lazzarini, S. G., Boehe, D. M., Pongeluppe, L. S., & Cook, M. L. (2026). <b>The Normative Core of Relational Stakeholder Strategies: Explaining Open Buyer-Supplier Relations in the Context of the Amazon Rainforest.</b> <i>Business Ethics Quarterly</i>, 36(1): 69-111."
+    takeaway: ""
+    doi: "https://doi.org/10.1017/beq.2025.3"
+selected_more: "See all publications"
+
+highlights_heading: "Talks and Media"
+# Video embeds. "embed" is the iframe src; "caption" is shown under the video (inline HTML allowed).
+highlights:
+  - embed: "https://www.youtube.com/embed/16pyI0T_VZw"
+    embed_title: "YouTube video: STR Virtual Symposium, How to measure the impact of strategy research?"
+    caption: >-
+      <i>en. </i><a href="https://www.youtube.com/@strstrategicmanagementdivi6489"><b>STR</b></a> Virtual Symposium: "How to measure the impact of strategy research?" (2024)
+  - embed: "https://www.youtube.com/embed/UnVrg2tLjwI"
+    embed_title: "YouTube video: E-commerce Firms’ Strategies Towards Institutional Failures: Evidence from Brazilian Favelas"
+    caption: >-
+      <i>en. </i><a href="https://corporate-sustainability.org/"><b>Alliance for Research on Corporate Sustainability</b></a> Presentation of an earlier version of "<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.3414">The Favela Effect: Spatial Inequalities and Firm Strategies in Disadvantaged Urban Communities</a>." Strategic Management Journal (2022).
+  - embed: "https://player.vimeo.com/video/439359561"
+    embed_title: "Vimeo video: Business Fights Poverty seminar session, An introduction to cross-sector collaborations and public-private partnerships"
+    caption: >-
+      <i>en.</i> <a href="https://businessfightspoverty.org/"><b>Business Fights Poverty</b></a> Seminar Session: "An introduction to cross-sector collaborations and public-private partnerships." (2020)
+  - embed: "https://www.youtube.com/embed/TIh3PKITz_k"
+    embed_title: "YouTube video: BM&C Talks entrevista Leandro Pongeluppe, Professor da Wharton School"
+    caption: >-
+      <i>pt. </i><a href="https://bmcnews.com.br/"><b><i>BM&amp;C News.</i></b></a> <i>"</i>BM&amp;C Talks entrevista Leandro Pongeluppe." (2024)

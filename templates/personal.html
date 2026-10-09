@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <h2>{{ page.heading }}</h2>
+    <div class="hobbies">
+      {% for h in page.hobbies %}
+      <article class="hobby">
+        <img src="{{ base }}/assets/img/{{ h.image }}" alt="{{ h.image_alt }}" loading="lazy" width="266" height="252">
+        <h2>{{ h.title }}</h2>
+        <div class="body">{{ h.body | safe }}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

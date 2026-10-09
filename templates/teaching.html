@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container justify">
+  <section class="section">
+    <h2>{{ page.interests_heading }}</h2>
+    <p>{{ page.interests }}</p>
+    {% if page.photo and asset_exists('img/' ~ page.photo) %}
+    <figure class="teaching-photo">
+      <img src="{{ base }}/assets/img/{{ page.photo }}" alt="{{ page.photo_alt }}" loading="lazy">
+      {% if page.photo_caption %}<figcaption>{{ page.photo_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </section>
+
+  <section class="section lines" id="teaching-awards">
+    <h3>{{ page.awards_heading }}</h3>
+    {% for l in page.awards %}<p>{{ l | safe }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="section lines">
+    <h3>{{ page.lecturer_heading }}</h3>
+    {% for l in page.lecturer %}<p>{{ l | safe }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="section lines">
+    <h3>{{ page.ta_heading }}</h3>
+    {% for l in page.ta %}<p>{{ l | safe }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="section lines" id="case-studies">
+    <h3>{{ page.cases_heading | safe }}</h3>
+    {% for c in page.cases %}<p>{{ c | safe }}</p>
+    {% endfor %}
+    <small class="note-line">{{ page.cases_note }}</small>
+  </section>
+
+  <section class="section lines" id="class-slides">
+    <h3>{{ page.slides_heading | safe }}</h3>
+    <p>{{ page.slides_intro }}</p>
+    {% for s in page.slides %}<p><a href="{{ s.url }}"><b>{{ s.title }}</b>: {{ s.case }}</a></p>
+    {% endfor %}
+    <small class="note-line">{{ page.slides_note }}</small>
+  </section>
+</div>
+{% endblock %}

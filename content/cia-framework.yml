@@ -1,0 +1,16 @@
+# CIA Framework page. The Streamlit app is embedded as on Google Sites (ciaframework.streamlit.app, embed mode).
+hero_title: "CIA Framework"
+banner: banner-altamira-agroforest.jpg
+seo_title: "Comparative Institutional Analysis (CIA) Framework | Leandro S. Pongeluppe | Wharton School"
+description: "The Comparative Institutional Analysis (CIA) Framework: an interactive tool that compares countries' economic and political institutions over time, by Leandro S. Pongeluppe, Wharton School."
+last_update: "Last update: October 2026."
+
+intro: |-
+  <h2>Comparative Institutional Analysis (CIA) Framework</h2>
+  <p>The Comparative Institutional Analysis (CIA) Framework compares the institutional environments of countries over time. It places each country on two axes, economic institutions (by default, Regulatory Quality from the World Bank Worldwide Governance Indicators) and political institutions (by default, the V-Dem Electoral Democracy Index), and combines them into a single CIA score. It is designed for students, managers, and analysts who need to compare institutional environments in global strategy and international business.</p>
+  <p>A research note about the <a href="/assets/papers/2026_Pongeluppe_CIA_Framework_Research_Note.pdf"><b>Comparative Institutional Analysis (CIA) Framework</b></a> explains the method and the data.</p>
+  <p><b>Suggested citation:</b> Pongeluppe, L. S. (2026). "Comparative Institutional Analysis (CIA Framework)." The Wharton School, University of Pennsylvania.</p>
+
+app_url: "https://ciaframework.streamlit.app/?embed=true"
+app_open_url: "https://ciaframework.streamlit.app/"
+app_title: "Comparative Institutional Analysis (CIA) Framework interactive app (Streamlit)"

@@ -1,0 +1,63 @@
+# "Practice & Media" page (formerly "Extension"; URL kept at /extension/): technical reports first, then
+# "News and Media", one dated list that build.py merges from data/news.yml and data/media.yml (newest first,
+# duplicates removed). The old /news/ page redirects to /extension/#news.
+hero_title: "Practice & Media"
+# Banner: any photo in assets/img/ (optional banner_alt: describes it for screen readers).
+banner: banner-rocinha-panorama.jpg
+seo_title: "Practice & Media | Leandro S. Pongeluppe | Wharton School"
+description: "Technical reports, news, op-eds, interviews, and media coverage of Leo's research, in English and Portuguese."
+last_update: "Last update: October 2026."
+
+reports_heading: "Technical Service"
+reports_intro: "Below are some technical reports on which I am a co-author or have participated in their development."
+reports_note: ""
+
+# Fields: title, url (link on the cover image and title), image, image_alt, source (inline HTML), collab (small print, optional)
+reports:
+  - title: "Amazon Impact Bond (AIB)"
+    url: "https://www.dropbox.com/s/7i38zel7vi4kl2m/2020_02_19_Amazon%20Impact%20Bond.pdf?dl=0"
+    image: report-amazon-impact-bond.jpg
+    image_alt: "Cover of the Amazon Impact Bond white paper: aerial view of a river winding through the Amazon rainforest"
+    source: "Pongeluppe, 2020. <i>White paper.</i>"
+  - title: "Guide to the Assessment of Socio-Environmental Impact for Use in Impact Investments and Social Enterprises"
+    url: "https://sinapse.gife.org.br/dlm_file/guia-de-avaliacao-de-impacto-socioambiental-para-utilizacao-em-negocios-e-investimentos-de-impacto"
+    image: report-guide-socio-environmental-impact.jpg
+    image_alt: "Cover of the Insper Metricis Guide to the Assessment of Socio-Environmental Impact, illustrated with a crowd of people"
+    source: "<i>Insper Metricis</i>, 2018. Link to the Portuguese edition."
+  - title: "Learning from Best Practice Traps in Public Service"
+    url: "/assets/reports/2018_Accenture_Best_Practice_Traps_Public_Service.pdf"
+    image: report-best-practice-traps.jpg
+    image_alt: "Cover of the Accenture Research report Learning from Best Practice Traps in Public Service"
+    source: "<i>Accenture Research,</i> 2018."
+  - title: "The Impact Investing Landscape in Latin America: Trends 2014 & 2015"
+    url: "/assets/reports/2016_ANDE_LAVCA_LGT_Impact_Investing_Latin_America.pdf"
+    image: report-impact-investing-latam.jpg
+    image_alt: "Cover of The Impact Investing Landscape in Latin America: Trends 2014 and 2015, by ANDE, LAVCA, and LGT Impact Ventures"
+    source: "<i>ANDE, LAVCA, &amp; LGT Impact Ventures</i>, 2016."
+  - title: "ITAÚ UNIBANCO: Tapping into local knowledge to finance Brazil’s suburban entrepreneurs"
+    url: "/assets/reports/2013_Accenture_Itau_Unibanco.pdf"
+    image: report-itau-unibanco.jpg
+    image_alt: "Cover of the Accenture case study on Itaú Unibanco, showing hands framing the Christ the Redeemer statue in Rio de Janeiro"
+    source: "<i>Accenture Institute for High Performance,</i> 2013."
+    collab: "in collaboration with Raghav Narsalay, Ryan Coffey, and Aarohi Sen."
+  - title: "UNICA: Equipping low-income workers with new skills, at scale"
+    url: "/assets/reports/2013_Accenture_UNICA.pdf"
+    image: report-unica.jpg
+    image_alt: "Cover of the Accenture case study on UNICA, showing hands framing the Christ the Redeemer statue in Rio de Janeiro"
+    source: "<i>Accenture Institute for High Performance,</i> 2013."
+    collab: "in collaboration with Raghav Narsalay, Ryan Coffey, and Aarohi Sen."
+  - title: "KLABIN: Growing the capabilities of local suppliers to ensure effective co-creation"
+    url: "/assets/reports/2012_Accenture_Klabin.pdf"
+    image: report-klabin.jpg
+    image_alt: "Cover of the Accenture case study on Klabin, showing hands framing the Christ the Redeemer statue in Rio de Janeiro"
+    source: "<i>Accenture Institute for High Performance,</i> 2012."
+    collab: "in collaboration with Raghav Narsalay, Ryan Coffey, and Aarohi Sen."
+  - title: "High-Growth Markets: Scaling Business Innovations to Grow with the Future Middle Class"
+    url: "/assets/reports/2012_Accenture_High_Growth_Markets.pdf"
+    image: report-high-growth-markets.jpg
+    image_alt: "Cover of the Accenture report High-Growth Markets: Scaling Business Innovations to Grow with the Future Middle Class, showing hands framing a field of grass"
+    source: "<i>Accenture Institute for High Performance,</i> 2012."
+    collab: "in collaboration with Raghav Narsalay and Ryan Coffey."
+
+news_heading: "News and Media"
+news_intro: "New publications, teaching cases, op-eds, interviews, and media coverage, in English and Portuguese."

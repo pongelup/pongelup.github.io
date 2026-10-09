@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section cv-actions">
+    <a class="cv-button" href="{{ base }}{{ page.cv_file }}" download>Download CV (PDF)</a>
+    <span class="cv-updated">Updated {{ page.cv_updated }}. <a href="{{ base }}{{ page.cv_file }}">Open in a new tab</a></span>
+  </section>
+  <div class="pdf-frame">
+    <iframe src="{{ base }}{{ page.cv_file }}#view=FitH" title="{{ page.embed_title }}" loading="lazy"></iframe>
+  </div>
+</div>
+{% endblock %}

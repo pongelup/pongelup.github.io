@@ -1,0 +1,74 @@
+# Teaching page. Transcribed from the Google Sites version, 2026-10-09; typos, case links, and teaching awards updated the same day.
+# Each list line allows inline HTML (<i>, <b>, <a href="...">).
+hero_title: "Teaching"
+banner: banner-rocinha-gavea-drone.jpg
+seo_title: "Teaching | Leandro S. Pongeluppe | Wharton School"
+description: "MBA teaching at Wharton in global strategy, plus case studies on impact investing, inclusive innovation, and public-private collaboration."
+last_update: "Last update: October 2026."
+
+interests_heading: "Teaching Interests"
+interests: "Strategic Management, Global Strategy, Global Challenges, Sustainability, Impact Investing, Inclusive Innovations, and Public Innovations."
+
+# Class photo (file in assets/img/; leave "" for none). Student name tents are pixelated so no names are legible.
+photo: teaching-mgmt6110-class-2022.jpg
+photo_alt: "Leandro Pongeluppe sitting on the classroom floor with his Wharton MBA class of MGMT 6110 in a tiered lecture hall, Fall 2022"
+photo_caption: "MGMT 6110: Managing the Established Enterprise, Wharton MBA, Fall 2022."
+
+awards_heading: "Teaching Awards"
+awards:
+  - "Wharton Teaching Excellence Award 2025-26. MBA level, <i>MGMT 6110: Managing the Established Enterprise</i>."
+  - "Wharton Teaching Excellence Award 2024-25. MBA level, <i>MGMT 6110: Managing the Established Enterprise</i>."
+  - "Wharton Teaching Excellence Award 2023-24. MBA level, <i>MGMT 6110: Managing the Established Enterprise</i>."
+
+lecturer_heading: "Lecturer Experience"
+lecturer:
+  - "2022 to present - <i>Managing the Established Enterprise</i> / The Wharton School  (MBA)"
+  - "2018 to 2021 - <i>Fundamentals of Strategic Management</i> (Guest Lecturer) / Rotman School of Management (MBA)"
+  - "2019 - <i>Grand Challenges</i> (Guest Lecturer) / Rotman School of Management (MBA) and Munk School of Global Affairs and Public Policy (MGA)"
+  - "2016 - <i>Impact Innovations in the Public Sector</i>  / Insper (Undergraduate)"
+  - "2016 - <i>Organizational Strategy</i>  / Insper (Undergraduate)"
+  - "2013 to 2016 - <i>High Impact Investments</i>  / Insper (Executive Education)"
+  - "2015 - <i>Introduction to Impact Investing</i> / Insper (Undergraduate)"
+  - "2013 - <i>Introduction to Qualitative Comparative Analysis (QCA)</i>  / UFBA (Undergraduate and Graduate)"
+  - "2013 - <i>Biodiversity Supply-Chain</i>  / Natura Co. (Supply-Chain Department)"
+
+ta_heading: "Teaching Assistance Experience"
+ta:
+  - "2021 - <i>Fundamentals of Strategic Management</i> / Rotman School of Management (MBA)"
+  - "2013 to 2014 - <i>Corporate and Competitive Strategy; Organizational Strategy</i>  / Insper (Graduate)"
+  - "2012 to 2015 - <i>Corporate and Competitive Strategy; Organizational Strategy</i>  / Insper (Undergraduate)"
+  - "2012 - <i>Capsim Management SimulatorⓇ</i>  / Insper (Undergraduate)"
+
+cases_heading: "Case Studies<sup>*</sup>"
+cases:
+  - >-
+    <a href="https://doi.org/10.4135/9798348834449"><b><i>Banco da Providência: Dilemmas over Social Impact Assessment.</i></b></a> 2026. <i>SAGE Business Cases. In collaboration with Sandro Cabral, Sergio Lazzarini, and Michelle Borges.</i>
+  - >-
+    <a href="https://doi.org/10.4135/9781071976265"><b><i>Lions Outback Vision (LOV): Saving Sight with a Lens to the Future.</i></b></a> 2025. <i>SAGE Business Cases. In collaboration with Luís Gil and Nuno Gil.</i>
+  - >-
+    <a href="https://www.insper.edu.br/wp-content/uploads/2018/10/Villa_flora_port-1.pdf"><b><i>The Villa Flora Project: Innovation and Community Engagement in the Brazilian Real Estate Market.</i></b></a> 2016. Insper Metricis Case Studies Collection. In collaboration with Sérgio Lazzarini, Luis Norberto Paschoal, Carol Moron, Paula Saes, and Nobuiuki Ito.
+  - >-
+    <a href="https://www.insper.edu.br/casos/colecao-ae/"><b><i>Uber: The Dilemma of Growing with Disruptive Innovation</i></b></a><b><i>.</i></b> 2016. Insper Case Studies Collection. In collaboration with Paulo Furquim de Azevedo, Nobuiuki Ito, and Maria Clara Morgulis.
+  - >-
+    <a href="https://www.insper.edu.br/wp-content/uploads/2018/09/Avante-Humanizando-Solucoes-Financeiras-para-Microempreendedores-Base-Piramide.pdf"><b><i>Avante: Humanizing Financial Solutions for Pyramid-based Microentrepreneurs</i></b></a><b><i>.</i></b> 2015. Insper Metricis Case Studies Collection. In collaboration with Carol Moron, Nobuiuki Ito, Carla Ramos, and Sérgio Lazzarini.
+  - >-
+    <a href="https://www.insper.edu.br/casos/colecao-ae/"><b><i>Dudalina: Value Chain Growth Strategies</i></b></a><b><i>.</i></b> 2015. Insper Case Studies Collection. In collaboration with Sérgio Lazzarini, Nobuiuki Ito, and Rodrigo Amantea.
+  - >-
+    <a href="https://www.insper.edu.br/wp-content/uploads/2018/09/GERA-Venture-Capital-Escalando-Oportunidades-Educacionais-Jovens-Baixa-Renda-parte-A-versao10-06-15.pdf"><b><i>Gera Venture Capital: Climbing Educational Opportunities for Low-Income Youth</i></b> <b>(Part A)</b></a><b> and </b><a href="https://www.insper.edu.br/wp-content/uploads/2018/09/GERA-Venture-Capital-Escalando-Oportunidades-Educacionais-Jovens-Baixa-Renda-parte-B-versao10-06-15.pdf"><b>(Part B)</b></a><b>.</b> 2014. Insper Metricis Case Studies Collection. In collaboration with Sérgio Lazzarini, and Nobuiuki Ito.
+  - >-
+    <a href="https://www.insper.edu.br/wp-content/uploads/2018/09/instituto-semeia-bases-investimento-imapcto-unidades-conservacao-brasileiras.pdf"><b><i>Instituto Semeia: Building the Basis for Impact Investments in Brazilian Conservation Units</i></b></a><b><i>.</i></b> 2013. Insper Metricis Case Studies Collection. In collaboration with Sérgio Lazzarini, Andrea Minardi.
+  - >-
+    <a href="https://www.insper.edu.br/wp-content/uploads/2018/09/vox-capital-equilibrando-retorno-financeiro-social-investimento-impacto.pdf"><b><i>Vox Capital: Balancing Financial and Social Return on Impact Investments.</i></b></a> 2013. Insper Case Studies Collection. Insper Metricis Case Studies Collection. In collaboration with Sérgio Lazzarini, Andrea Minardi.
+cases_note: "* The English version of all cases can be shared upon request."
+
+slides_heading: "Class Slides<sup>**</sup>"
+slides_intro: "Wharton MBA MGMT 6110: Managing the Established Enterprise (Global Module)"
+slides:
+  - { url: "/assets/slides/MGMT6110_Class_1_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Grolsch Beer case" }
+  - { url: "/assets/slides/MGMT6110_Class_2_Institutional_Environment.pdf", title: "Class 2. The Institutional Environment in Global Markets", case: "Corruption in International Business case" }
+  - { url: "/assets/slides/MGMT6110_Class_3_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Market", case: "European Super League caselet" }
+  - { url: "/assets/slides/MGMT6110_Class_4_International_Strategies_Governance.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara caselets" }
+  - { url: "/assets/slides/MGMT6110_Class_5_International_Strategies_Entry_Modes.pdf", title: "Class 5. International Strategies and Entry Modes", case: "Walmart in China case" }
+  - { url: "/assets/slides/MGMT6110_Class_6_Institutional_Voids_Business_Groups.pdf", title: "Class 6. Institutional Voids, Political Risk, and Business Groups", case: "Tata Group case" }
+  - { url: "/assets/slides/MGMT6110_Class_7_Climate_Inclusive_Innovation_Stakeholders.pdf", title: "Class 7. Climate Change, Inclusive Innovation, and Stakeholder Management", case: "Natura case" }
+slides_note: "** Copyrights of the author. Permission for use may be granted upon reasonable request."

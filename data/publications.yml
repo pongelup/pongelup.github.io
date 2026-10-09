@@ -1,0 +1,163 @@
+# Published work on the Research page.
+# Citations corrected on 2026-10-09 against Crossref (year = issue year; volumes, issues, pages,
+# article numbers, and DOIs as in the journal record) and kept identical to the CV.
+#
+# Fields per entry:
+#   authors: text before the title, including the year, exactly as displayed
+#   title:   linked title (shown in bold)
+#   url:     link on the title (local PDF in assets/papers/ for articles)
+#   after:   text after the title; inline HTML allowed (<i>journal</i>, volume, pages)
+#   doi:     optional DOI URL; shown as a "DOI" link after the citation
+#   web:     optional publisher page without a DOI; shown with the label in web_label
+#   note:    optional small-print line under the citation (awards, status)
+#   description: two sentences on the setting, data, and approach (shown under the citation)
+#   Published papers are TEXT ONLY (Leo, 2026-10-09): no figures; the Research template has no figure slot for them.
+#   PDFs:    put the file in assets/papers/ (for example 2027_SMJ_Pongeluppe_Short_Title.pdf) and set
+#            url: "/assets/papers/<file>.pdf". Keep the DOI in doi.
+
+international:
+  - authors: "Xuan, D., Hsieh, M. A., Pongeluppe, L. S., Weaver, M. M., Mann, M. E., Jerolmack, D. J., & Ulloa, H. N. (2026)."
+    title: "Climate extremes and urbanization drive flood tipping points at the city-river interface."
+    url: "/assets/papers/2026_npjNH_Xuan_et_al_Flood_Tipping_Points.pdf"
+    after: "<i>npj Natural Hazards.</i> 3, Article 20."
+    doi: "https://doi.org/10.1038/s44304-026-00186-8"
+    description: "Using Hurricane Ida's 2021 flood of the Schuylkill River in Philadelphia, we build a street-resolving flood model that combines LiDAR terrain, river bathymetry, and land use across the watershed. Scenario simulations then show how extreme rainfall, tides, and sea-level rise push the city toward a flood tipping point."
+
+  - authors: "Pongeluppe, L. S. (2026)."
+    title: "Timothy Kuhn. What Do Corporations Want? Communicative Capitalism, Corporate Purpose, and a New Theory of the Firm."
+    url: "/assets/papers/2026_ASQ_Pongeluppe_Book_Review_Kuhn.pdf"
+    after: "<i>Administrative Science Quarterly.</i> 71(2). Book Review."
+    doi: "https://doi.org/10.1177/00018392251414373"
+    description: "A review of Timothy Kuhn's book, which develops a communication-based theory of the firm in which corporations are not unitary actors but shifting constellations of people and practices. The review discusses what this view offers to organizational researchers and strategic management scholars."
+
+  - authors: "Etzion, D., Baudoin, L., Pongeluppe, L. S., Callery, P. J., Lancaster, C. A., & Panwar, R. (2026)."
+    title: "Good Data, Good Questions: Leveraging Comprehensive, Direct-Observation Data Sets for Impactful Research on Organizations and the Environment."
+    url: "/assets/papers/2026_OE_Etzion_et_al_Good_Data_Good_Questions.pdf"
+    after: "<i>Organization & Environment.</i> 39(1): 112-139."
+    doi: "https://doi.org/10.1177/10860266251403388"
+    description: "Research on organizations and the natural environment often relies on self-reported corporate data of uncertain accuracy. This essay identifies accessible, high-accuracy data sets from the natural sciences, such as satellite observations, forensic genetics, and hydrological maps, and sets out roadmaps and research questions for using them."
+
+  - authors: "Lazzarini, S. G., Boehe, D. M., Pongeluppe, L. S., & Cook, M. L. (2026)."
+    title: "The Normative Core of Relational Stakeholder Strategies: Explaining Open Buyer-Supplier Relations in the Context of the Amazon Rainforest."
+    url: "/assets/papers/2026_BEQ_Lazzarini_et_al_Normative_Core.pdf"
+    after: "<i>Business Ethics Quarterly.</i> 36(1): 69-111."
+    doi: "https://doi.org/10.1017/beq.2025.3"
+    note: "Distinguished Paper Award in Cooperative Strategy at the 80th Academy of Management Annual Meeting."
+    description: "An in-depth case study of Natura, a Brazilian cosmetics company that sources natural inputs from Amazon communities through supplier relations open to multiple buyers, including competitors. The study shows how a morally informed normative core, shaped by the company's controlling shareholders, sustained this open relational strategy."
+
+  - authors: "Derksen, L., McGahan, A. M., & Pongeluppe, L. S. (2025)."
+    title: "The Lifesaving Impact of Electronic Medical Records for HIV Patients."
+    url: "/assets/papers/2025_REStat_Derksen_McGahan_Pongeluppe_EMR_HIV.pdf"
+    after: "<i>Review of Economics and Statistics.</i> Published online October 2025."
+    doi: "https://doi.org/10.1162/rest.a.1617"
+    description: "We study the replacement of paper-based patient files with electronic medical records in HIV clinics in Malawi. An event study of clinic records shows that the new systems improved patient retention and reduced AIDS deaths, mainly through efficiency gains in managing patient data."
+
+  - authors: "Cordeiro, G. S., Arvate, P. R., Story, J., & Pongeluppe, L. S. (2025)."
+    title: "Heroes or Villains? Agribusiness Leaders in the Amazon Region."
+    url: "/assets/papers/2025_AMD_Cordeiro_et_al_Heroes_or_Villains.pdf"
+    after: "<i>Academy of Management Discoveries.</i> 11(1): 17-38."
+    doi: "https://doi.org/10.5465/amd.2022.0255"
+    note: "Academy of Management Discoveries Best Paper Award 2025 (Runner-up), 2026."
+    description: "We study mayors of municipalities in the Brazilian Amazon from 2004 to 2016 and compare those with a background in agribusiness to other mayors. A regression discontinuity design on close elections examines new firm creation and deforestation in their municipalities."
+
+  - authors: "Pongeluppe, L. S. (2024)."
+    title: "The Allegory of the Favela: The Multifaceted Effects of Socioeconomic Mobility."
+    url: "/assets/papers/2024_ASQ_Pongeluppe_Allegory_of_the_Favela.pdf"
+    after: "<i>Administrative Science Quarterly.</i> 69(3): 619-654."
+    doi: "https://doi.org/10.1177/00018392241240469"
+    note: "Winner Best Conference PhD Paper Prize at the Strategic Management Society 40th Annual Conference. Winner of the Administrative Science Quarterly Dissertation Award 2025."
+    description: "A randomized controlled trial of a business training program for residents of Brazilian favelas, complemented by quantile regressions, field visits, and interviews. The study shows that training raised participants' income, while their economic progress also exposed them to more favela stigma."
+
+  - authors: "McGahan, A. M., & Pongeluppe, L. S. (2023)."
+    title: "There Is No Planet B: Aligning Stakeholder Interests to Preserve the Amazon Rainforest."
+    url: "/assets/papers/2023_MS_McGahan_Pongeluppe_No_Planet_B.pdf"
+    after: "<i>Management Science.</i> 69(12): 7860-7881."
+    doi: "https://doi.org/10.1287/mnsc.2023.4884"
+    note: "William F. Glueck Best Paper Award at the 81st Academy of Management Annual Meeting. Best Paper Award at the 13th Alliance for Research on Corporate Sustainability Annual Conference. Best Paper Award at the 17th Annual Social Entrepreneurship Conference. Honorable Mention for the Best Paper Prize at the Strategic Management Society 41st Annual Conference. Responsible Research in Management Award, Micro Area, 2025."
+    description: "We study how Natura, a Brazilian cosmetics company, sources forest products from rural Amazonian communities, combining fieldwork with satellite data on forest cover and fires across municipalities. A difference-in-differences design, with an instrument based on the missing satellite images Natura used to choose where to enter, ties Natura's entry to forest preservation."
+
+  - authors: "Pongeluppe, L. S. (2022)."
+    title: "The Favela Effect: Spatial Inequalities and Firm Strategies in Disadvantaged Urban Communities."
+    url: "/assets/papers/2022_SMJ_Pongeluppe_Favela_Effect.pdf"
+    after: "<i>Strategic Management Journal.</i> 43(13): 2777-2808."
+    doi: "https://doi.org/10.1002/smj.3414"
+    note: "Best Paper Award at the 12th Annual Ivey/Alliance for Research on Corporate Sustainability PhD Sustainability Academy. Responsible Research in Management Award, Macro Area, 2025."
+    description: "We study how e-commerce firms serve customers inside Brazilian favelas compared with customers just outside their borders. Mixed methods, combining data on product availability and delivery prices with interviews and fieldwork, show why some firms treat favela consumers more equitably than their competitors."
+
+  - authors: "Mesquita, L. F., Saes, M. S. M., Lazzarini, S. G., & Pongeluppe, L. S. (2021)."
+    title: "Can trust induce vertical integration? An experimental study of buyer–seller exchanges with distinct competencies and specific investments."
+    url: "/assets/papers/2021_ICC_Mesquita_et_al_Trust_Vertical_Integration.pdf"
+    after: "<i>Industrial and Corporate Change.</i> 30(3): 778-798."
+    doi: "https://doi.org/10.1093/icc/dtaa055"
+    description: "A laboratory experiment in which players choose between markets and hierarchies when exchanges require specific investments and the parties hold distinct competencies. The study tests whether trust can lead parties toward vertical integration, not only toward market exchange."
+
+  - authors: "Lazzarini, S. G., Pongeluppe, L. S., Ito, N. C., Oliveira, F. D. M., & Ovanessoff, A. (2020)."
+    title: "Public Capacity, Plural Forms of Collaboration, and the Performance of Public Initiatives: A Configurational Approach."
+    url: "/assets/papers/2020_JPART_Lazzarini_et_al_Public_Capacity.pdf"
+    after: "<i>Journal of Public Administration Research and Theory.</i> 30(4): 579-595."
+    doi: "https://doi.org/10.1093/jopart/muaa007"
+    description: "A comparative study of 24 public initiatives in Brazil, India, and South Africa with high and low performance for their target populations. Fuzzy-set qualitative comparative analysis identifies the combinations of public capacity, collaborations, and stakeholder orientation behind high performance."
+
+  - authors: "Monteiro, G. F. A., Yeung, L. L. T., Caleman, S. M. Q., & Pongeluppe, L. S. (2019)."
+    title: "Indigenous land demarcation conflicts in Brazil: Has the Supreme Court’s decision brought (in)stability?"
+    url: "/assets/papers/2019_EJLE_Monteiro_et_al_Indigenous_Land.pdf"
+    after: "<i>European Journal of Law and Economics.</i> 48(2): 267-290."
+    doi: "https://doi.org/10.1007/s10657-019-09628-3"
+    description: "We study property rights conflicts between Indigenous peoples and rural farmers in Brazil's Midwest, using cases heard by a regional federal court between 1999 and 2013. Qualitative comparative analysis examines whether a landmark 2009 Supreme Court decision brought stability to how lower-court judges decided these cases."
+
+  - authors: "Narsalay, R., Pongeluppe, L. S., & Light, D. (2015)."
+    title: "The Hidden Pitfalls of Inclusive Innovation."
+    url: "/assets/papers/2015_SSIR_Narsalay_Pongeluppe_Light_Inclusive_Innovation.pdf"
+    after: "<i>Stanford Social Innovation Review.</i> Winter: 47-53."
+    web: "https://ssir.org/articles/entry/the_hidden_pitfalls_of_inclusive_innovation"
+    web_label: "SSIR"
+    description: "Drawing on cases of inclusive innovation in emerging markets, the article examines why new products and services for low-income customers often fail to scale. It outlines the pitfalls business leaders should anticipate and how to avoid them."
+
+brazilian:
+  - authors: "Ito, N. C., & Pongeluppe, L. S. (2020)."
+    title: "The COVID-19 outbreak and the municipal administration responses: resource munificence, social vulnerability, and the effectiveness of public actions."
+    url: "/assets/papers/2020_RAP_Ito_Pongeluppe_COVID19_Municipal.pdf"
+    after: "<i>RAP. Revista de Administração Pública.</i> 54(4): 782-838."
+    doi: "https://doi.org/10.1590/0034-761220200249x"
+    description: "We study the actions that the city halls of 52 Brazilian municipalities took in the first month after their first confirmed COVID-19 case. Fuzzy-set qualitative comparative analysis identifies the combinations of local conditions and public actions associated with lower transmission in that initial stage."
+
+  - authors: "Monteiro, G. F. A., Caleman, S. M. Q., & Pongeluppe, L. S. (2019)."
+    title: "Firm Performance and the Strategic Components of Bankruptcy Reorganization Plans."
+    url: "/assets/papers/2019_BAR_Monteiro_et_al_Bankruptcy_Reorganization.pdf"
+    after: "<i>BAR. Brazilian Administration Review.</i> 16(4): e190072."
+    doi: "https://doi.org/10.1590/1807-7692bar2019190072"
+    description: "We study the bankruptcy reorganization plans that publicly traded companies in Brazil submitted to the courts. Qualitative comparative analysis links the strategic content of these plans, such as the diagnosis of the crisis and the firm's resources, to the firm's later performance."
+
+  - authors: "Pongeluppe, L. S., & Saes, M. S. M. (2014)."
+    title: "Ambiente institucional e compra de terras por estrangeiros em países em desenvolvimento."
+    url: "/assets/papers/2014_RAUSP_Pongeluppe_Saes_Compra_de_Terras.pdf"
+    after: "<i>RAUSP Revista de Administração da Universidade de São Paulo.</i> 49(1): 9-17."
+    doi: "https://doi.org/10.5700/rausp1127"
+    description: "Grounded in New Institutional Economics, we study land acquisitions by foreign investors in developing countries. Using secondary data from international organizations, we relate foreign direct investment to investment freedom, property rights, and corruption in the host countries."
+
+  - authors: "Pongeluppe, L. S., Abdul-hak, G. S., & Carvalho, C. E. (2013)."
+    title: "O Brasil na Reunião Ministerial de Agricultura da OCDE, Fevereiro de 2010."
+    url: "/assets/papers/2013_PeD_Pongeluppe_et_al_OCDE_Agricultura.pdf"
+    after: "<i>Pesquisa & Debate.</i> Revista do Programa de Estudos Pós-Graduados em Economia Política, 24(1(43)): 137-151."
+    description: "We analyze Brazil's position, as an enhanced-engagement observer, at the OECD Agriculture Ministerial Meeting of February 2010. Ranking the main issues in seven thematic dimensions, we use multidimensional scaling to compare Brazil with the other participants."
+
+book_chapters:
+  - authors: "Lazzarini, S. G., Cabral, S., Pongeluppe, L. S., Ferreira, L. C. D. M., & Rotondaro, A. (2021)."
+    title: "The Best of Both Worlds? Impact Investors and Their Role in the Financial Versus Social Performance Debate."
+    url: "https://www.elgaronline.com/view/edcoll/9781789907957/9781789907957.00012.xml"
+    after: "In: Lehner (Ed.), <i>A Research Agenda for Social Finance</i>. Edward Elgar Publishing."
+    doi: "https://doi.org/10.4337/9781789907964.00012"
+    description: "This chapter examines the role of impact investors in the debate over financial versus social performance. It discusses how impact investors can pursue both kinds of returns and sets out questions for research on social finance."
+
+  - authors: "Boehe, D. M., Pongeluppe, L. S., & Lazzarini, S. G. (2014)."
+    title: "Natura and the Development of a Sustainable Supply Chain in the Amazon Region."
+    url: "https://www.amazon.com/Multinationals-Latin-America-Case-Studies-ebook/dp/B01FYB7R6Y"
+    after: "In: Liberman, Garcilazo, and Stal (Eds.), <i>Multinationals in Latin America: Case Studies</i>. Palgrave Macmillan, London. p. 49-71."
+    doi: "https://doi.org/10.1057/9781137024107_5"
+    description: "A case study of Natura, the Brazilian cosmetics company, and how it built a sustainable supply chain with communities in the Amazon region. The chapter follows the company's sourcing model and its relationships with local suppliers."
+
+  - authors: "Pongeluppe, L. S., Moron, C. R., & Lazzarini, S. G. (2014)."
+    title: "The Pulp and Paper Industry: The Case of Klabin Company and Orsa Group."
+    url: "https://www.academia.edu/25667953/Challenges_to_economic_organization_Plural_Forms"
+    after: "In: Ménard, Saes, Silva, and Raynaud (Eds.), <i>Challenges to Economic Organization: Plural Forms</i>. Atlas, São Paulo. p. 185-199."
+    description: "A comparative case study of two Brazilian pulp and paper companies, Klabin and Orsa Group, and how they organize their wood supply. The chapter uses the lens of plural forms, in which firms make and buy the same input at the same time."

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="intro-grid">
+    <div>
+      <img class="headshot" src="{{ base }}/assets/img/{{ page.headshot }}" alt="{{ page.headshot_alt }}" width="365" height="381">
+      <div class="contact">
+        <h3>{{ page.contact_heading }}</h3>
+        {{ page.contact | safe }}
+        <h3>{{ page.profiles_heading }}</h3>
+        <p class="profile-links">
+          {% for s in site.social if not s.url.startswith('mailto:') %}<a href="{{ s.url }}">{{ s.label }}</a>{% if not loop.last %} | {% endif %}{% endfor %}
+        </p>
+      </div>
+    </div>
+    <div class="bio justify">
+      <h2>{{ page.name_heading }}</h2>
+      <h3>{{ page.intro_heading }}</h3>
+      {{ page.intro | safe }}
+    </div>
+  </section>
+
+  {% if news %}
+  <section class="section" id="news">
+    <h2>{{ page.news_heading }}</h2>
+    <ul class="news-list">
+      {% for n in news[:3] %}
+      <li><span class="news-date">{{ n.date }}</span> {{ n.html | safe }}</li>
+      {% endfor %}
+    </ul>
+    <p class="more-link"><a href="{{ base }}/extension/#news">{{ page.news_more }}</a></p>
+  </section>
+  {% endif %}
+
+  <section class="section" id="research-program">
+    <h2>{{ page.program_heading }}</h2>
+    <ul class="pillar-list">
+      {% for p in page.program %}
+      <li><b>{{ p.pillar }}:</b> {{ p.text }}</li>
+      {% endfor %}
+    </ul>
+    <p class="more-link"><a href="{{ base }}/research/#research-program">{{ page.program_more }}</a></p>
+  </section>
+
+  <section class="section" id="selected-publications">
+    <h2>{{ page.selected_heading }}</h2>
+    {% for p in page.selected %}
+    <p class="pub">{{ p.citation | safe }}{% if p.doi %} <a class="doi" href="{{ p.doi }}">DOI</a>{% endif %}{% if p.takeaway %}<span class="takeaway">{{ p.takeaway }}</span>{% endif %}</p>
+    {% endfor %}
+    <p class="more-link"><a href="{{ base }}/research/#published-papers">{{ page.selected_more }}</a></p>
+  </section>
+
+  <section class="section" id="highlights">
+    <h2>{{ page.highlights_heading }}</h2>
+    <div class="media-grid">
+      {% for h in page.highlights %}
+      <figure style="margin:0">
+        <div class="video"><iframe src="{{ h.embed }}" title="{{ h.embed_title }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        <figcaption class="caption">{{ h.caption | safe }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

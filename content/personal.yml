@@ -1,0 +1,43 @@
+# Personal page. Transcribed verbatim from the Google Sites version, 2026-10-09.
+hero_title: "Personal"
+banner: banner-rocinha-gavea-drone.jpg
+seo_title: "Personal | Leandro S. Pongeluppe | Wharton School"
+description: "Personal interests of Leandro S. Pongeluppe: cinema, football, music, and philosophy."
+last_update: "Last update: October 2026."
+
+heading: "Some of my hobbies include..."
+
+# Each hobby: title, image, image_alt, body (paragraphs; inline HTML allowed)
+hobbies:
+  - title: "Cinema"
+    image: hobby-cinema.jpg
+    image_alt: "Rows of red velvet seats in an empty cinema"
+    body: |-
+      <p>I love cinema, and I do my best to find movies related to organizations and socioeconomic development.</p>
+      <p>Thus, I developed an online movie list on twitter under:</p>
+      <p><a href="https://twitter.com/search?q=%23LeoMovieList&amp;src=typd&amp;f=live"><b>#LeoMovieList</b></a></p>
+  - title: "Football (Soccer)"
+    image: hobby-football.jpg
+    image_alt: "Sport Club Corinthians Paulista crest on a white flag"
+    body: |-
+      <p>Football (soccer) is one of my favorite activities, either watching or playing.</p>
+      <p>If you are interested in knowing more about the best team follow this link: <a href="https://www.corinthians.com.br/en/"><b>Vai Corinthians!</b></a></p>
+      <p>Most unforgettable games:</p>
+      <p><a href="https://www.youtube.com/watch?v=n9FWmotS0KM"><b>Corinthians - Libertadores 2012</b></a></p>
+      <p><a href="https://www.youtube.com/watch?v=LHy13vp5k9U"><b>Brazil - World Cup 1994</b></a></p>
+  - title: "Music"
+    image: hobby-music.jpg
+    image_alt: "Close-up of an acoustic guitar body and sound hole on a black background"
+    body: |-
+      <p>I play ukulele and <i>pandeiro</i> (a Brazilian drum) intermediate level on both, so please do not have high expectations.</p>
+      <p>Anyway, I love music. If you want to listen to some of the best Brazilian songs, check the following playlist:</p>
+      <p><a href="https://open.spotify.com/user/leandro.pongeluppe/playlist/7skkrBX3dQHUj4lOoufufl?si=vQ6NibAKT32D9WXxHqwzQA"><b>Brazilian Classic Playlist</b></a></p>
+  - title: "Philosophy"
+    image: hobby-philosophy.jpg
+    image_alt: "Bronze statue of The Thinker by Auguste Rodin against a blue sky"
+    body: |-
+      <p>I love some philosophical discussions, and I often try to  read philosophy books and listen to philosophy podcasts.</p>
+      <p>Below, I include some of my favorite resources:</p>
+      <p><a href="https://philosophizethis.org/"><b>Philosophize This!</b></a></p>
+      <p><a href="https://quemsomosnos.com.br"><b>Quem Somos Nós?</b></a></p>
+      <p><a href="https://plato.stanford.edu"><b>Stanford Encyclopedia of Philosophy</b></a></p>

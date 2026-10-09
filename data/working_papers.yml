@@ -1,0 +1,104 @@
+# Working papers on the Research page, grouped by the three research pillars.
+# Within each pillar, papers are ordered by closeness to publication: second-round R&R, first-round R&R,
+# submitted or under review, then working papers. The CV (sections/03c_working_papers.tex) keeps the full list;
+# "Fifty Shades of Green" and "How Does ESG Matter for Firm Performance, Really?" are in the CV but not on the site.
+# Leo's rule (2026-10-09): describe the setting, data, and approach only. NEVER results, findings, numbers,
+# or effect directions.
+#
+# Fields per paper:
+#   title, coauthors (sentence shown under the title; leave empty for sole-authored papers),
+#   status (journal and round, small print), award (optional small print),
+#   links (optional list of {url, label}),
+#   description (two sentences: setting, data, approach; no results),
+#   image (optional figure file in assets/img/; leave "" for none), image_alt, caption.
+#   Figures must not contain SDG icons (those appear only on the pillar cards).
+
+heading: "Working Papers"
+
+groups:
+  - topic: "Poverty, Inequality, and Violence"
+    papers:
+      - title: "Not from Ipanema: Security Interventions and Organizational Life in Brazilian Favelas"
+        coauthors: "in collaboration with Daphne Coelho, Aline Gatignon, and Sérgio Lazzarini."
+        status: "First round at Organization Science."
+        description: "We study the Pacifying Police Units (UPPs), a large-scale security program that the state of Rio de Janeiro rolled out across its favelas. Combining interviews with panel data on formal organizations and jobs, we compare favelas that received a UPP with favelas that did not."
+        image: wp-upp-staggered-jobs.png
+        image_alt: "Event-study plot of the log number of formal jobs in favelas before and after a UPP arrived, estimated with five staggered difference-in-differences estimators"
+        caption: "The design: a staggered difference-in-differences event study of formal jobs in favelas around the arrival of a UPP, with five estimators."
+
+      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Submitted to Strategic Management Journal."
+        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
+        image: wp-terrorism-gtd-map.png
+        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
+        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
+
+      - title: "Internalizing and Emancipating: A Dialogical Theory of Stakeholder Governance"
+        coauthors: ""
+        status: "Working paper (desk edit at Academy of Management Review)."
+        description: "This conceptual paper treats the organization as a nexus of relationships with the stakeholders it affects. Drawing on transaction cost economics, the capability approach, and Paulo Freire's pedagogy, it develops a theory of stakeholder governance built on two levers, internalizing externalities and emancipating stakeholders, connected through dialogue."
+        image: wp-amr-lever2-emancipation.png
+        image_alt: "Diagram of individual well-being against initial endowment, with a deprivation zone, a newly emancipated range, and an emancipation zone"
+        caption: "The second lever: the deprivation zone and the emancipation zone of stakeholder governance."
+
+      - title: "Did the #MeToo Movement Change the Face or the Picture of Corporate America?"
+        coauthors: "in collaboration with Michelle A. Borges, Aldo Musacchio, Rodrigo Wagner, and Marcelo Orellana."
+        status: "Working paper."
+        description: "We study how large U.S. public companies portrayed and staffed their leadership before and after the #MeToo movement began in October 2017. We combine computer-vision analysis of the images in corporate reports with data on executives and boards in an event-study design."
+        image: wp-metoo-event-images.png
+        image_alt: "Event-study plot of the number of images of women and of men per corporate report, 2012 to 2022, with 2016 as the reference year"
+        caption: "The design: an event study of the images of women and men in corporate reports, 2012 to 2022, with 2016 as the reference year."
+
+  - topic: "Climate Change"
+    papers:
+      - title: "Leviathan as A Client: Public versus Private Promotion of Desalination Technologies to Address Water Scarcity"
+        coauthors: "in collaboration with Ilze Kivleniece and Sérgio Lazzarini."
+        status: "Second round at Strategic Management Journal."
+        award: "Best Proposal Award, Strategic Management Society, Cooperative Strategies Interest Group, 2023."
+        description: "We compare how public and private clients commission desalination plants and which technologies they choose to address water scarcity. Using global data on desalination plants since the 1950s together with historical drought data, we examine these choices across countries with different levels of institutional development."
+        image: wp-desal1-public-private-map.png
+        image_alt: "World map of countries shaded by the number of desalination plants with public and private clients, with a three-by-three color legend"
+        caption: "The setting: countries shaded by the number of desalination plants built for public and for private clients."
+
+      - title: "Multiple Stakeholders, One Purpose: Value Creation and Distribution by Protecting Biodiversity in the Amazon"
+        coauthors: "in collaboration with Elis Regina Monte Feitosa and Maria Sylvia Macchione Saes."
+        status: "Second round at Academy of Management Perspectives."
+        description: "We study the community-based management of the pirarucu, a giant Amazonian fish, in two sustainable-use reserves in the Brazilian Amazon, the RDS Mamirauá and the RESEX Médio Juruá. Drawing on fieldwork with community associations and their partners, we examine how value is created and distributed among multiple stakeholders when protecting biodiversity is the shared purpose."
+        image: wp-pirarucu-fisher.jpg
+        image_alt: "A fisher carrying a large pirarucu on the shoulders along a forest path in the Brazilian Amazon, with a second fisher behind him"
+        caption: "The setting: fishers carrying a pirarucu out of the floodplain in a sustainable-use reserve in the Brazilian Amazon."
+
+      - title: "Global Footprint of Desalination in the Oceans"
+        coauthors: "in collaboration with Xinni Wu, Ilze Kivleniece, Sérgio Lazzarini, and Hugo N. Ulloa."
+        status: "Under review at Nature Sustainability."
+        description: "We study the environmental footprint of desalination plants on the surrounding oceans worldwide. We link the locations and start dates of desalination plants to satellite measurements of ocean conditions, such as salinity, sea surface temperature, and chlorophyll, in a staggered difference-in-differences design."
+        image: wp-desal2-plants-map.png
+        image_alt: "World map of coastal and inland desalination plant locations, with buffer zones of 50 to 1,000 kilometers drawn in the ocean around coastal plants"
+        caption: "The setting: coastal and inland desalination plants worldwide, with the ocean buffer zones used to measure their footprint."
+
+      - title: "The Influence of Climate Change on Terrorism"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Working paper."
+        description: "We combine a worldwide grid of one-degree cells with yearly measures of water balance, from drought to unusually wet conditions, and records of terrorist attacks over three decades. Using panel models with spatial corrections, we examine how climate conditions in a cell and in its neighborhood relate to terrorism."
+        image: ""
+        image_alt: ""
+        caption: ""
+
+  - topic: "Healthcare"
+    papers:
+      - title: "Stakeholder Architecture under Resource Constraints: A Configurational Approach to Healthcare Provision in Sub-Saharan Africa"
+        coauthors: "in collaboration with Aline Gatignon, Julien Clément, and Luk N. Van Wassenhove."
+        status: "Working paper."
+        description: "We study North Star Alliance, an NGO that runs roadside clinics offering HIV/AIDS and other health services to truck drivers and other high-risk populations along transport corridors in sub-Saharan Africa. Using qualitative and survey data from its clinics, we apply fuzzy-set qualitative comparative analysis (fsQCA) to compare the configurations of stakeholder relationships behind each clinic's healthcare delivery."
+        image: wp-northstar-wellness-centre.jpg
+        image_alt: "Ilula Mtua Wellness Centre, a blue North Star Alliance roadside clinic in Africa (picture from the North Star Alliance webpage)"
+        caption: "The setting: a North Star Alliance roadside wellness centre (picture from the North Star Alliance webpage)."
+
+      - title: "Who Bears the Epidemic?"
+        coauthors: "in collaboration with Carlos Inoue."
+        status: "Working paper."
+        description: "We study the Zika epidemic in Brazil and how its burden was distributed across racial groups of mothers and newborns. Using national birth records in an event-study design, we compare white and Black or Brown mothers before and after the outbreak, and across public (SUS) and private care."
+        image: wp-zika-map-and-cases.png
+        image_alt: "Two panels: (a) map of Brazilian municipalities shaded by the microcephaly rate per 10,000 live births in 2016, with Pernambuco outlined; (b) bar chart of recorded Zika cases by epidemiological week, 2016 to 2019"
+        caption: "The setting: (a) microcephaly rate per 10,000 live births by municipality, 2016, Pernambuco outlined (SINASC/DATASUS, ICD-10 Q02); (b) recorded Zika cases by epidemiological week, 2016 to 2019 (SINAN)."

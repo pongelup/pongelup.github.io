@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    {{ page.intro | safe }}
+    <div class="app-frame">
+      <iframe src="{{ page.app_url }}" title="{{ page.app_title }}" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe>
+    </div>
+  </section>
+</div>
+{% endblock %}

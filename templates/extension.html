@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section" id="technical-reports">
+    <h2>{{ page.reports_heading }}</h2>
+    <p>{{ page.reports_intro }}</p>
+    {% if page.reports_note %}<small>{{ page.reports_note }}</small>{% endif %}
+    <div class="reports">
+      {% for r in page.reports %}
+      <article class="report">
+        <a class="cover" href="{{ r.url }}"><img src="{{ base }}/assets/img/{{ r.image }}" alt="{{ r.image_alt }}" loading="lazy" width="320" height="320"></a>
+        <h3><a href="{{ r.url }}">{{ r.title }}</a></h3>
+        <p>{{ r.source | safe }}</p>
+        {% if r.collab %}<small>{{ r.collab }}</small>{% endif %}
+        <p class="report-link"><a href="{{ r.url }}">Read the report</a></p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="news">
+    <span id="in-the-media"></span>
+    <h2>{{ page.news_heading }}</h2>
+    {% if page.news_intro %}<p>{{ page.news_intro }}</p>{% endif %}
+    <ul class="news-list">
+      {% for n in news %}
+      <li><span class="news-date">{{ n.date }}</span> {{ n.html | safe }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

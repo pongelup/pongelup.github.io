@@ -1,0 +1,39 @@
+# Site-wide settings used by every page (header, footer, tracker, SEO defaults).
+site_name: Leandro S. Pongeluppe
+site_url: https://www.leandropongeluppe.com
+# Leave base_path empty when the site is served from the custom domain (CNAME).
+# Set it to "/repo-name" only if previewing on username.github.io/repo-name.
+base_path: ""
+og_image: /assets/img/headshot.jpg
+title_suffix: Leandro S. Pongeluppe | Wharton School
+
+nav:
+  - { label: Home, path: /, key: home }
+  # News merged into Practice & Media (2026-10-09); /news/ redirects to /extension/#news.
+  - { label: CV, path: /cv/, key: cv }
+  - { label: Research, path: /research/, key: research }
+  - { label: Teaching, path: /teaching/, key: teaching }
+  # Renamed from "Extension" (audit recommendation L4, option A); the URL stays /extension/.
+  - { label: Practice & Media, path: /extension/, key: extension }
+  - { label: CIA Framework, path: /cia-framework/, key: cia-framework }
+  - { label: Personal, path: /personal/, key: personal }
+
+# Footer icons (also used for the "Profiles" line on Home).
+social:
+  - { url: "mailto:pongelup@wharton.upenn.edu", icon: icon-email.png, alt: "Email Leandro S. Pongeluppe", label: "Email" }
+  - { url: "https://mgmt.wharton.upenn.edu/profile/pongelup/", icon: icon-wharton.svg, alt: "Wharton faculty profile of Leandro S. Pongeluppe", label: "Wharton faculty page" }
+  - { url: "https://scholar.google.com/citations?user=aHN4BioAAAAJ&hl=en", icon: icon-scholar.svg, alt: "Leandro S. Pongeluppe on Google Scholar", label: "Google Scholar" }
+  - { url: "https://orcid.org/0000-0001-6195-4455", icon: icon-orcid.svg, alt: "ORCID iD 0000-0001-6195-4455", label: "ORCID" }
+  - { url: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7017320", icon: icon-ssrn.svg, alt: "Leandro S. Pongeluppe on SSRN", label: "SSRN" }
+  - { url: "https://www.linkedin.com/in/leandro-s-pongeluppe-15b09513/", icon: icon-linkedin.png, alt: "Leandro S. Pongeluppe on LinkedIn", label: "LinkedIn" }
+  - { url: "https://x.com/LSPongeluppe", icon: icon-x.svg, alt: "Leandro S. Pongeluppe on X", label: "X" }
+
+# StatCounter, copied from the Google Sites custom embed (same project, so history continues).
+statcounter:
+  project: 12004789
+  security: "4ceffa89"
+  invisible: 1
+  https: 1
+
+# Google Analytics: none found in the Google Sites source on 2026-10-09. Leave empty.
+ga4_id: ""
