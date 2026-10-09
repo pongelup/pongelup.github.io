@@ -23,13 +23,13 @@ program:
     image_alt: "Aerial drone view of the border between the Rocinha favela and the Gávea neighborhood in Rio de Janeiro: dense rooftops on one side, houses with pools among trees on the other"
     credit: "Photo: Johnny Miller / Unequal Scenes"
     credit_url: "https://unequalscenes.com"
-    text: "I study how firms, nonprofits, and governments shape opportunity in communities marked by poverty and inequality. Much of this work takes place in Brazilian favelas, where I combine fieldwork and interviews with field experiments and administrative data to understand how organizations operate in disadvantaged places and how residents respond. I also study how public interventions in favelas reshape the organizational life of these communities. Throughout, I focus on the stakeholders these organizations affect and on who gains or loses access to economic opportunity."
-    sdgs: [1, 2, 5, 8, 11, 16]
+    text: "I study how firms, nonprofits, and governments shape opportunity in communities marked by poverty and inequality. Much of this work takes place in Brazilian favelas, where I combine fieldwork and interviews with field experiments and administrative data to understand how organizations operate in disadvantaged places. I also study how public interventions in favelas reshape the organizational life of these communities. Throughout, I focus on the stakeholders these organizations affect and on who gains access to economic opportunity."
+    sdgs: [1, 2, 5, 8, 11]
   - pillar: "Climate Change"
     image: pillar-climate-altamira-agroforest.jpg
     image_alt: "Floor of a cacao agroforest near Altamira, Pará, in the Brazilian Amazon, with seedlings among fallen leaves and tree trunks behind"
     credit: "Photo: Leandro S. Pongeluppe"
-    text: "I study how organizations and their stakeholders protect ecosystems while creating economic value for the communities that depend on them. In the Amazon rainforest, I work with firms, cooperatives, and local communities that manage forest and river resources, such as non-timber forest products and the pirarucu fish. I also study water and the oceans, including who promotes desalination technologies and what footprint desalination leaves on marine environments. I pair satellite and other natural-science data with fieldwork to connect global patterns to the choices organizations make on the ground."
+    text: "I study how organizations and their stakeholders protect ecosystems while creating economic value for local communities. In the Amazon rainforest, I work with firms, cooperatives, and communities that manage forest and river resources, such as non-timber forest products and the pirarucu fish. I also study the oceans, including who promotes desalination technologies and what footprint desalination leaves on marine environments. I pair satellite data with fieldwork to connect global patterns to choices made on the ground."
     sdgs: [6, 12, 13, 14, 15]
   - pillar: "Healthcare and Security"
     # Previous photo (Zambia truck stop), kept in assets/img but no longer displayed: pillar-health-zambia-truckstop.jpg
@@ -37,8 +37,8 @@ program:
     image: pillar-health-malawi-emr-nurse.jpg
     image_alt: "A health worker in a face mask logs in to the National EMR touchscreen at an HIV clinic in Malawi, with a barcode scanner and label printer beside her"
     credit: "Photo: Abdallah Chilungo"
-    text: "I study how organizations deliver healthcare to the people who are hardest to reach and how insecurity shapes where and how they operate. In sub-Saharan Africa, I examine how technology, such as electronic medical records in HIV/AIDS clinics in Malawi, and the design of stakeholder partnerships, such as roadside clinics along transport corridors, shape the care patients receive; in Brazil, I study how the burden of the Zika epidemic was distributed across racial groups and how the health system responded. On security, I study how terrorism, and the climate conditions related to it, shape where and how multinational corporations operate around the world. This work combines partnerships with clinics and NGOs, large administrative and geospatial records, and qualitative fieldwork."
-    sdgs: [3, 10, 17]
+    text: "I study how organizations deliver healthcare to the people who are hardest to reach and how insecurity shapes where they operate. In sub-Saharan Africa, I examine how electronic medical records changed HIV/AIDS care in Malawi and how roadside clinics serve transport corridors. In Brazil, I study how the burden of the Zika epidemic was distributed across racial groups. I also study how terrorism, and the climate conditions related to it, shape where multinational corporations operate around the world."
+    sdgs: [3, 10, 16, 17]
 
 # Names used for the SDG icon alt text.
 sdg_names:

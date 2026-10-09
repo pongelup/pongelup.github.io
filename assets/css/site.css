@@ -45,7 +45,7 @@ small, .small { font-family: var(--sans); font-size: 12px; line-height: 1.45; }
   display: flex; align-items: center; justify-content: space-between;
   height: 56px; padding: 0 28px;
   /* translucent dark bar so the name and menu stay legible on any banner photo */
-  background: rgba(38,50,56,0.62);
+  background: rgba(38,50,56,0.40);
   -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
   transition: background-color 0.2s ease;
 }
@@ -85,7 +85,7 @@ small, .small { font-family: var(--sans); font-size: 12px; line-height: 1.45; }
   font-size: 70.7px; line-height: 1.1; letter-spacing: -0.5px;    /* 53pt */
   text-shadow: 0 2px 6px rgba(0,0,0,0.55);
   /* translucent plate so white titles stay legible on light, busy banners (e.g. the drone photo) */
-  background: rgba(38,50,56,0.55); padding: 6px 30px 10px; border-radius: 6px;
+  background: rgba(38,50,56,0.38); padding: 6px 30px 10px; border-radius: 6px;
   -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
 }
 
