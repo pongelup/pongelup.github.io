@@ -24,7 +24,7 @@
   <section class="section" id="news">
     <h2>{{ page.news_heading }}</h2>
     <ul class="news-list">
-      {% for n in news[:3] %}
+      {% for n in home_news %}
       <li><span class="news-date">{{ n.date }}</span> {{ n.html | safe }}</li>
       {% endfor %}
     </ul>

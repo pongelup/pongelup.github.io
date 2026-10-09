@@ -2,7 +2,8 @@
 
 Reads   data/*.yml      (site settings, news, publications, working papers, media)
         News (data/news.yml) and media (data/media.yml) are merged into one dated list, newest first,
-        deduplicated by URL; it is shown on Practice & Media (/extension/#news), and its first 3 items on Home.
+        deduplicated by URL; it is shown on Practice & Media (/extension/#news). Home shows the 3 most recent items
+        about different papers (optional "paper:" key; untagged items count as their own, see home_news).
         /news/ is a small redirect page to /extension/#news.
         content/*.yml   (free text for each page)
         templates/*.html (Jinja2 templates)
@@ -130,7 +131,7 @@ def merged_news(news, media):
         html = str(n.get("text", ""))
         if n.get("link"):
             html += f' <a href="{escape(n["link"])}">{escape(n.get("link_text") or "Read more")}</a>'
-        item = {"sort": key, "date": display, "html": html}
+        item = {"sort": key, "date": display, "html": html, "paper": n.get("paper")}
         k = url_key(n.get("link"))
         if k:
             seen[k] = item
@@ -143,16 +144,36 @@ def merged_news(news, media):
                 # Same story already in news.yml: keep that text, but use the more precise media date to sort.
                 if key[:2] == seen[k]["sort"][:2] and key[2] > seen[k]["sort"][2]:
                     seen[k]["sort"] = key
+                if not seen[k].get("paper"):
+                    seen[k]["paper"] = m.get("paper")
                 continue
             html = f'<i>{escape(m.get("outlet", ""))}</i> <a href="{escape(m["url"])}">{escape(m["title"])}</a>'
             if m.get("lang") == "pt":
                 html += ' <span class="lang-note">(in Portuguese)</span>'
-            item = {"sort": key, "date": display, "html": html}
+            item = {"sort": key, "date": display, "html": html, "paper": m.get("paper")}
             if k:
                 seen[k] = item
             items.append(item)
     items.sort(key=lambda i: i["sort"], reverse=True)  # stable: equal dates keep file order
     return items
+
+
+def home_news(items, count=3):
+    """The newest `count` items about different papers: one item per "paper:" key (the newest one).
+
+    Items without a paper key (talks, podcasts, blog posts) are always treated as unique.
+    """
+    picked, papers = [], set()
+    for item in items:
+        paper = str(item.get("paper") or "").strip().lower()
+        if paper:
+            if paper in papers:
+                continue
+            papers.add(paper)
+        picked.append(item)
+        if len(picked) == count:
+            break
+    return picked
 
 
 def asset_exists(path):
@@ -170,6 +191,7 @@ def build():
         "media": load("data/media.yml"),
     }
     shared["news"] = merged_news(load("data/news.yml").get("items") or [], shared["media"])
+    shared["home_news"] = home_news(shared["news"])
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True,
                       undefined=ChainableUndefined,  # optional fields may be missing
                       trim_blocks=True, lstrip_blocks=True)

@@ -9,15 +9,16 @@ HTML is committed so GitHub Pages serves it directly (no Jekyll, no build step o
 | Path | What it is |
 |---|---|
 | `data/site.yml` | Site name, navigation, footer icons, StatCounter settings |
-| `data/news.yml` | News items. `build.py` merges them with `data/media.yml` into one dated "News and Media" list (newest first, duplicates by URL removed): all of it on Practice & Media (`/extension/#news`), the first 3 on Home. `/news/` only redirects there |
+| `data/news.yml` | News items. `build.py` merges them with `data/media.yml` into one dated "News and Media" list (newest first, duplicates by URL removed): all of it on Practice & Media (`/extension/#news`); Home shows the 3 most recent items about different papers (see "One item per paper on Home"). `/news/` only redirects there |
 | `data/publications.yml` | Published papers: `international`, `brazilian`, `book_chapters` (citation and short description; text only, no figures) |
 | `data/working_papers.yml` | Working papers, grouped by research pillar, ordered by closeness to publication (the CV lists two more papers that the site leaves out) |
 | `data/media.yml` | Media mentions (`english`, `portuguese`), merged into the "News and Media" list on Practice & Media |
 | `content/<page>.yml` | Free text of each page (banner photo, title, SEO description, "Last update" line); the Research pillar cards live in `content/research.yml` |
-| `templates/` | Jinja2 templates (`base.html` holds header, footer, StatCounter) |
+| `templates/` | Jinja2 templates (`base.html` holds header and footer; `_statcounter.html` holds the StatCounter snippet, included by `base.html` and by the `/news/` redirect in `news.html`) |
 | `assets/css/site.css` | Styles (PT Sans + Merriweather, as in the Google Sites theme) |
 | `assets/img/` | Images (banners, covers, paper figures, social icons); `assets/img/sdg/` holds the UN SDG icons (`sdg_01.png` ... `sdg_17.png`) |
 | `assets/papers/`, `assets/reports/`, `assets/slides/` | PDFs linked from the site (papers, technical reports, class slides), moved here from Google Drive |
+| `assets/cases/` | Teaching case PDFs linked from the Teaching page (`content/teaching.yml`, `cases:`), named `YEAR_PUBLISHER_Short_Name.pdf` (`_PT` for cases available only in Portuguese) |
 | `assets/cv/Leandro_Pongeluppe_CV.pdf` | CV PDF shown on the CV page (compiled from the CV Overleaf repo) |
 | `index.html`, `home/`, `news/` (redirect), `cv/`, `research/`, `teaching/`, `extension/`, `cia-framework/`, `personal/`, `404.html` | Generated pages (do not edit by hand) |
 | `CNAME` | Custom domain `www.leandropongeluppe.com` |
@@ -43,6 +44,22 @@ items:
 
 Dates may be "October 2026", "October 9th, 2026.", or "9 de outubro de 2026."; the list is sorted by date.
 If the same link is also in `data/media.yml`, the item shows once, with the text from `data/news.yml`.
+
+### One item per paper on Home
+
+Home shows the 3 most recent items about DIFFERENT papers. Give each item about a paper an optional
+`paper:` key, a short name of your choice (for example `paper: emr-hiv-malawi`), and use the same key for
+every news item and every media item (`data/media.yml`) about that paper, including press coverage:
+
+```yaml
+  - date: "October 2026"
+    text: "..."
+    link: "https://..."
+    paper: emr-hiv-malawi
+```
+
+`build.py` (`home_news`) walks the merged list from newest to oldest and keeps only the newest item per key.
+Items without a key (talks, podcasts, blog posts) each count as their own. Practice & Media still lists everything.
 
 ## Add a published paper
 
@@ -82,6 +99,8 @@ publication (second-round R&R, first-round R&R, submitted, working paper):
         image: my-figure.png          # optional; put the file in assets/img/ (no SDG icons in figures)
         image_alt: "Describe what the figure depicts"
         caption: "Neutral description of the setting (not a result)."
+        image_class: wp-fig-tall      # optional; for a tall figure, shows it narrower (250 px) so it takes
+                                      # about the same space as the other figures
 ```
 
 ## Research pillar cards and SDG icons
@@ -138,8 +157,8 @@ GitHub Pages uses `404.html`.)
 
 ## Tracking
 
-StatCounter project 12004789 (the same project the Google Sites version used) is loaded on every page
-from `templates/base.html`, with the original settings (`sc_invisible=1`, `sc_security="4ceffa89"`,
+StatCounter project 12004789 (the same project the Google Sites version used) is loaded on every page,
+including `404.html` and the `/news/` redirect, from `templates/_statcounter.html`, with the original settings (`sc_invisible=1`, `sc_security="4ceffa89"`,
 `sc_https=1`). No Google Analytics ID was found on the old site, so none is included; to add one later,
 set `ga4_id` in `data/site.yml`.
 

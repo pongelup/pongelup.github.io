@@ -1,0 +1,12 @@
+{# StatCounter snippet, included by base.html (every page, including 404) and news.html (the /news/ redirect). #}
+<!-- Statcounter code for Leo's Personal Website
+http://www.leandropongeluppe.com (carried over from the Google Sites embed: same project, same security code) -->
+<script type="text/javascript">
+var sc_project={{ site.statcounter.project }};
+var sc_invisible={{ site.statcounter.invisible }};
+var sc_security="{{ site.statcounter.security }}";
+var sc_https={{ site.statcounter.https }};
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/{{ site.statcounter.project }}/0/{{ site.statcounter.security }}/{{ site.statcounter.invisible }}/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->

@@ -131,9 +131,9 @@ main { display: block; }
 .hero-credit { position: absolute; right: 10px; bottom: 6px; z-index: 2; margin: 0; font-family: var(--sans); font-size: 11.5px; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.7); }
 .hero-credit a { color: inherit; text-decoration: none; }
 .hero-credit a:hover { text-decoration: underline; }
-.teaching-photos { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 28px; align-items: flex-start; }
+.teaching-photos { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 28px; align-items: flex-start; }
 .teaching-photo { margin: 0; flex: 0 0 auto; }
-.teaching-photo img { height: 400px; width: auto; max-width: none; display: block; border-radius: 4px; }
+.teaching-photo img { height: 330px; width: auto; max-width: none; display: block; border-radius: 4px; }
 .teaching-photo figcaption { width: 0; min-width: 100%; margin-top: 6px; color: var(--muted); font-family: var(--sans); font-size: 13px; }
 @media (max-width: 700px) {
   .teaching-photos { flex-direction: column; }
@@ -143,8 +143,8 @@ main { display: block; }
 .pillar-body { padding: 4px 20px 20px; }
 .pillar-card h3 { font-size: 18px; margin-top: 14px; }
 .pillar-card p { margin: 10px 0 0; text-align: left; }
-.sdg-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.sdg-row img { width: 56px; height: 56px; display: block; }
+.sdg-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.sdg-row img { width: 44px; height: 44px; display: block; }
 .wp-desc { margin-top: 10px; }
 .pub-card { margin-top: 18px; }
 .pub-card .pub { margin-top: 0; }
@@ -162,6 +162,8 @@ main { display: block; }
 .topic > h3 { font-size: 16px; }
 .wp { display: grid; grid-template-columns: 5fr 7fr; gap: 46px; margin-top: 48px; align-items: start; }
 .wp img { width: 100%; max-width: 470px; margin-top: 16px; }
+/* Tall figures (image_class: wp-fig-tall in data/working_papers.yml): capped so they take about the same space as the others. */
+.wp .wp-fig-tall img { max-width: 250px; display: block; margin-left: auto; margin-right: auto; }
 .wp h3 { font-size: 18px; text-align: justify; margin-top: 0; }
 .wp .status { margin-top: 12px; }
 .pubs h3 { margin-top: 18px; font-size: 16px; }
@@ -172,6 +174,7 @@ main { display: block; }
 
 /* Teaching */
 .lines p { margin-top: 12px; }
+.lines .doi { white-space: nowrap; font-family: var(--sans); }
 .note-line { margin-top: 18px; display: block; }
 
 /* Extension */

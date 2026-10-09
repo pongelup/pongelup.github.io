@@ -1,5 +1,5 @@
 # News items, newest first. build.py merges them with data/media.yml into one dated list (duplicates by URL
-# removed, this file's text wins): all of it on Practice & Media (/extension/#news), the first 3 on Home.
+# removed, this file's text wins): all of it on Practice & Media (/extension/#news), and on Home the 3 most recent items about different papers (see paper:).
 # Dates come from the journal or publisher record (Crossref, SAGE, outlet metadata) checked on 2026-10-09;
 # month and year only. If only the year is known, write the year alone.
 #
@@ -8,51 +8,63 @@
 #   text:  one sentence; inline HTML is allowed (<i>, <b>, <a href="...">)
 #   link:  optional URL; shown as a link after the sentence
 #   link_text: optional label for that link (default "Read more")
+#   paper: optional short key of the paper the item is about (for example emr-hiv-malawi). Home shows the 3 most
+#          recent items about DIFFERENT papers (one per paper); items without a key each count as their own.
+#          Use the same key in data/media.yml for coverage of the same paper.
 
 items:
   - date: "May 2026"
     text: "PreventionWeb (UN Office for Disaster Risk Reduction) picks up the Penn Today story: \"USA: Lessons from Hurricane Ida's historic flood.\""
     link: "https://www.preventionweb.net/news/when-schuylkill-swallowed-city-lessons-hurricane-idas-historic-flood"
+    paper: flood-tipping-points
     link_text: "Read it"
 
   - date: "April 2026"
     text: "Penn Today quotes me in \"When the Schuylkill swallowed the city: Lessons from Hurricane Ida's historic flood.\""
     link: "https://penntoday.upenn.edu/news/when-schuylkill-swallowed-city-lessons-hurricane-idas-historic-flood"
+    paper: flood-tipping-points
     link_text: "Read it"
 
   - date: "March 2026"
     text: "With Laura Derksen and Anita McGahan, I wrote \"HIV in Malawi: digital filing system saved lives and boosted care\" for <i>The Conversation</i> (Africa), republished by Knowledge at Wharton and allAfrica."
     link: "https://theconversation.com/hiv-in-malawi-digital-filing-system-saved-lives-and-boosted-care-research-274646"
+    paper: emr-hiv-malawi
     link_text: "Read it"
 
   - date: "February 2026"
     text: "New paper in <i>npj Natural Hazards</i> with Dingyu Xuan, M. Ani Hsieh, Mackenzie M. Weaver, Michael E. Mann, Douglas J. Jerolmack, and Hugo N. Ulloa: \"Climate extremes and urbanization drive flood tipping points at the city-river interface.\""
     link: "https://doi.org/10.1038/s44304-026-00186-8"
+    paper: flood-tipping-points
     link_text: "Read it"
 
   - date: "January 2026"
     text: "New SAGE Business Case with Sandro Cabral, Sérgio Lazzarini, and Michelle Augusto Borges: \"Banco da Providência: Dilemmas over Social Impact Assessment.\""
     link: "https://doi.org/10.4135/9798348834449"
+    paper: banco-da-providencia-case
     link_text: "Read it"
 
   - date: "January 2026"
     text: "My review of Timothy Kuhn's <i>What Do Corporations Want? Communicative Capitalism, Corporate Purpose, and a New Theory of the Firm</i> appears in <i>Administrative Science Quarterly</i>."
     link: "https://doi.org/10.1177/00018392251414373"
+    paper: kuhn-book-review
     link_text: "Read it"
 
   - date: "December 2025"
     text: "Penn Today: \"Electronic medical records help save lives of HIV patients.\""
     link: "https://penntoday.upenn.edu/news/wharton-leandro-pongeluppe-electronic-medical-records-help-save-lives-hiv-patients"
+    paper: emr-hiv-malawi
     link_text: "Read it"
 
   - date: "December 2025"
     text: "\"Good Data, Good Questions,\" with Dror Etzion, Lucie Baudoin, Patrick J. Callery, Cady A. Lancaster, and Rajat Panwar, is published online in <i>Organization &amp; Environment</i>."
     link: "https://doi.org/10.1177/10860266251403388"
+    paper: good-data-good-questions
     link_text: "Read it"
 
   - date: "October 2025"
     text: "\"The Lifesaving Impact of Electronic Medical Records for HIV Patients,\" with Laura Derksen and Anita McGahan, is published online in the <i>Review of Economics and Statistics</i>."
     link: "https://doi.org/10.1162/rest.a.1617"
+    paper: emr-hiv-malawi
     link_text: "Read it"
 
   - date: "June 2025"
@@ -63,21 +75,25 @@ items:
   - date: "May 2025"
     text: "\"The Normative Core of Relational Stakeholder Strategies,\" with Sérgio Lazzarini, Dirk Boehe, and Michael Cook, is published online in <i>Business Ethics Quarterly</i>."
     link: "https://doi.org/10.1017/beq.2025.3"
+    paper: normative-core
     link_text: "Read it"
 
   - date: "March 2025"
     text: "\"Heroes or Villains? Agribusiness Leaders in the Amazon Region,\" with Gustavo Cordeiro, Paulo Arvate, and Joana Story, appears in <i>Academy of Management Discoveries</i> 11(1)."
     link: "https://doi.org/10.5465/amd.2022.0255"
+    paper: heroes-or-villains
     link_text: "Read it"
 
   - date: "March 2025"
     text: "The ASQ Blog features \"The Allegory of the Favela: The Multifaceted Effects of Socioeconomic Mobility.\""
     link: "https://asqblog.com/2025/03/10/pongeluppe-leandro-s-2024-the-allegory-of-the-favela-the-multifaceted-effects-of-socioeconomic-mobility/"
+    paper: allegory-of-the-favela
     link_text: "Read it"
 
   - date: "January 2025"
     text: "New SAGE Business Case with Luís Gil and Nuno Gil: \"Lions Outback Vision: Saving Sight With a Lens to the Future.\""
     link: "https://doi.org/10.4135/9781071976265"
+    paper: lions-outback-vision-case
     link_text: "Read it"
 
   - date: "January 2025"

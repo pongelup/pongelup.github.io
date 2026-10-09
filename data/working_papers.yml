@@ -10,7 +10,8 @@
 #   status (journal and round, small print), award (optional small print),
 #   links (optional list of {url, label}),
 #   description (two sentences: setting, data, approach; no results),
-#   image (optional figure file in assets/img/; leave "" for none), image_alt, caption.
+#   image (optional figure file in assets/img/; leave "" for none), image_alt, caption,
+#   image_class (optional; wp-fig-tall shows a tall figure narrower so it takes about the same space as the others).
 #   Figures must not contain SDG icons (those appear only on the pillar cards).
 
 heading: "Working Papers"
@@ -77,14 +78,16 @@ groups:
         image: wp-desal2-ocean-conditions-3panel.png
         image_alt: "Three stacked world maps of ocean surface conditions: (a) salinity in parts per thousand, (b) sea surface temperature in degrees Celsius, and (c) chlorophyll-a concentration in milligrams per cubic meter, each with its own color scale"
         caption: "The ocean conditions we track: global maps of (a) surface salinity, (b) sea surface temperature, and (c) chlorophyll-a concentration, 2015 Q4."
+        image_class: wp-fig-tall   # tall three-panel figure: shown narrower so it takes about the same space as the others
 
       - title: "The Influence of Climate Change on Terrorism"
         coauthors: "in collaboration with Leandro Nardi."
         status: "Working paper."
         description: "We combine a worldwide grid of one-degree cells with yearly measures of water balance, from drought to unusually wet conditions, and records of terrorist attacks over three decades. Using panel models with spatial corrections, we examine how climate conditions in a cell and in its neighborhood relate to terrorism."
-        image: ""
-        image_alt: ""
-        caption: ""
+        # Panels A and B of figure_26_projection.png (Analyses_LP\Grid Cells\Figures 3), cropped from the original (gallery2 G-a).
+        image: wp-climate-terrorism-projection-ssp585-2041-2060.png
+        image_alt: "Two world maps side by side for SSP5-8.5, 2041 to 2060: (A) projected change in December SPEI-12, in standard deviations of each cell's 1991-2020 distribution, brown for drier and green for wetter; (B) projected change in the annual probability of at least one terrorist attack, in percentage points, red for higher and blue for lower"
+        caption: "Projected drought conditions (change in December SPEI-12) and predicted change in the probability of terrorist attacks under SSP5-8.5, 2041-2060, ensemble median of 16 CMIP6 models."
 
   - topic: "Healthcare"
     papers:

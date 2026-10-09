@@ -2,7 +2,8 @@
 # Transcribed from leandropongeluppe.com/extension on 2026-10-09; dates, names, and dead links
 # corrected the same day (see PENDING_FIXES.md, section E). 2025-2026 items added from the CV.
 #
-# Fields: lang (en / pt), outlet, title (linked), url, date (text shown after the link).
+# Fields: lang (en / pt), outlet, title (linked), url, date (text shown after the link),
+# paper (optional short key of the paper the item is about, as in data/news.yml; Home shows one item per paper).
 # To add an item, copy an existing block, keep the same indentation, and put it at the top of its list.
 
 english:
@@ -10,101 +11,121 @@ english:
   outlet: PreventionWeb (UN Office for Disaster Risk Reduction).
   title: "USA: Lessons from Hurricane Ida's historic flood."
   url: https://www.preventionweb.net/news/when-schuylkill-swallowed-city-lessons-hurricane-idas-historic-flood
+  paper: flood-tipping-points
   date: May 7th, 2026.
 - lang: en
   outlet: EurekAlert! (AAAS).
   title: "When the Schuylkill swallowed the city: Lessons from Hurricane Ida's historic flood."
   url: https://www.eurekalert.org/news-releases/1128170
+  paper: flood-tipping-points
   date: May 13th, 2026.
 - lang: en
   outlet: Phys.org.
   title: "When the Schuylkill swallowed the city: Lessons from Hurricane Ida's historic flood."
   url: https://phys.org/news/2026-05-schuylkill-swallowed-city-lessons-hurricane.html
+  paper: flood-tipping-points
   date: May 1st, 2026.
 - lang: en
   outlet: Mirage News.
   title: "Schuylkill's Fury: Ida's Flood Teaches City Lessons."
   url: https://www.miragenews.com/schuylkills-fury-idas-flood-teaches-city-lessons-1673046/
+  paper: flood-tipping-points
   date: May 13th, 2026.
 - lang: en
   outlet: WHYY.
   title: "Lessons learned from Ida: Philadelphia must brace for next big storm, Penn researchers say."
   url: https://whyy.org/articles/philadelphia-flooding-hurricane-ida-lessons-climate/
+  paper: flood-tipping-points
   date: June 3rd, 2026.
 - lang: en
   outlet: Penn GEFLOW Lab.
   title: "When Rivers Tip: Philadelphia's Warning for Urban Flood Futures."
   url: https://web.sas.upenn.edu/geflow-lab/2026/02/25/when-rivers-tip-philadelphias-warning-for-urban-flood-futures/
+  paper: flood-tipping-points
   date: February 25th, 2026.
 - lang: en
   outlet: Rotman Insights Hub.
   title: "HIV in Malawi: How a digital filing system saved lives and boosted care."
   url: https://insightshub.rotman.utoronto.ca/healthcare-life-sciences/hiv-malawi-digital-filing
+  paper: emr-hiv-malawi
   date: March 2026.
 - lang: en
   outlet: Knowledge@Wharton.
   title: "HIV in Malawi: digital filing system saved lives and boosted care - research."
   url: https://knowledge.wharton.upenn.edu/opinion/hiv-in-malawi-digital-filing-system-saved-lives-and-boosted-care-research/
+  paper: emr-hiv-malawi
   date: March 10th, 2026.
 - lang: en
   outlet: allAfrica.
   title: "HIV in Malawi: Digital Filing System Saved Lives and Boosted Care - Research."
   url: https://allafrica.com/stories/202603110004.html
+  paper: emr-hiv-malawi
   date: March 10th, 2026.
 - lang: en
   outlet: The African Mirror.
   title: "HIV in Malawi: digital filing system saved lives and boosted care - research."
   url: https://theafricanmirror.africa/health/hiv-in-malawi-digital-filing-system-saved-lives-and-boosted-care-research/
+  paper: emr-hiv-malawi
   date: March 12th, 2026.
 - lang: en
   outlet: EurekAlert! (AAAS).
   title: Electronic medical records help save lives of HIV patients.
   url: https://www.eurekalert.org/news-releases/1110853
+  paper: emr-hiv-malawi
   date: December 22nd, 2025.
 - lang: en
   outlet: News-Medical.
   title: Digital patient records improve survival in HIV treatment clinics.
   url: https://www.news-medical.net/news/20251222/Digital-patient-records-improve-survival-in-HIV-treatment-clinics.aspx
+  paper: emr-hiv-malawi
   date: December 22nd, 2025.
 - lang: en
   outlet: Mirage News.
   title: EMRs Boost HIV Patient Survival Rates.
   url: https://www.miragenews.com/emrs-boost-hiv-patient-survival-rates-1594825/
+  paper: emr-hiv-malawi
   date: December 22nd, 2025.
 - lang: en
   outlet: Medical Xpress.
   title: Electronic medical records help save lives of HIV patients.
   url: https://medicalxpress.com/news/2025-12-electronic-medical-hiv-patients.html
+  paper: emr-hiv-malawi
   date: December 19th, 2025.
 - lang: en
   outlet: VoxDev.
   title: Electronic medical records save lives.
   url: https://voxdev.org/topic/health/electronic-medical-records-save-lives
+  paper: emr-hiv-malawi
   date: September 15th, 2025.
 - lang: en
   outlet: Inside ASQ.
   title: 2025 ASQ Article Award Winners, Lessons on Dissertation-Based Papers, and Changes in the Editorial Team.
   url: https://asqjournal.substack.com/p/2025-asq-article-award-winners-lessons
+  paper: allegory-of-the-favela
   date: August 21st, 2025.
 - lang: en
   outlet: Alice Palmer (Substack).
   title: The Amazon's Agribusiness Leaders Might Not Be Villains After All.
   url: https://alicepalmer.substack.com/p/the-amazons-agribusiness-leaders
+  paper: heroes-or-villains
   date: April 1st, 2025.
 - lang: en
   outlet: Penn Today.
   title: "When the Schuylkill swallowed the city: Lessons from Hurricane Ida's historic flood."
   url: https://penntoday.upenn.edu/news/when-schuylkill-swallowed-city-lessons-hurricane-idas-historic-flood
+  paper: flood-tipping-points
   date: April 30th, 2026.
 - lang: en
   outlet: The Conversation Africa.
   title: "HIV in Malawi: digital filing system saved lives and boosted care - research."
   url: https://theconversation.com/hiv-in-malawi-digital-filing-system-saved-lives-and-boosted-care-research-274646
+  paper: emr-hiv-malawi
   date: March 10th, 2026.
 - lang: en
   outlet: Penn Today.
   title: Electronic Medical Records Help Save Lives of HIV Patients.
   url: https://penntoday.upenn.edu/news/wharton-leandro-pongeluppe-electronic-medical-records-help-save-lives-hiv-patients
+  paper: emr-hiv-malawi
   date: December 18th, 2025.
 - lang: en
   outlet: SAGEPub.
@@ -115,6 +136,7 @@ english:
   outlet: The ASQ Blog.
   title: 'Pongeluppe, Leandro S. (2024). The Allegory of the Favela: The Multifaceted Effects of Socioeconomic Mobility.'
   url: https://asqblog.com/2025/03/10/pongeluppe-leandro-s-2024-the-allegory-of-the-favela-the-multifaceted-effects-of-socioeconomic-mobility/
+  paper: allegory-of-the-favela
   date: March 10th, 2025.
 - lang: en
   outlet: The Green Stories Podcast.
@@ -125,6 +147,7 @@ english:
   outlet: Faculti.
   title: 'The Allegory of the Favela: The Multifaceted Effects of Socioeconomic Mobility.'
   url: https://faculti.net/the-allegory-of-the-favela-the-multifaceted-effects-of-socioeconomic-mobility/
+  paper: allegory-of-the-favela
   date: January 2025.
 - lang: en
   outlet: Strategic Management Society.
@@ -135,6 +158,7 @@ english:
   outlet: Wharton Business Daily.
   title: Socioeconomic Mobility Comes at a Price. Does a Higher Income Outweigh Feeling Stigmatized?
   url: https://knowledge.wharton.upenn.edu/podcast/wharton-business-daily-podcast/socioeconomic-mobility-comes-at-a-price-does-a-higher-income-outweigh-feeling-stigmatized/
+  paper: allegory-of-the-favela
   date: July 18th, 2024.
 - lang: en
   outlet: The Burnes Center for Social Change.
@@ -145,6 +169,7 @@ english:
   outlet: Knowledge@Wharton.
   title: The Consequences of Socioeconomic Mobility.
   url: https://knowledge.wharton.upenn.edu/article/the-consequences-of-socioeconomic-mobility/
+  paper: allegory-of-the-favela
   date: June 3rd, 2024.
 - lang: en
   outlet: Rotman Magazine.
@@ -221,6 +246,7 @@ portuguese:
   outlet: Folha de São Paulo.
   title: Qual o custo de subir a escada social?
   url: https://www1.folha.uol.com.br/blogs/politicas-e-justica/2024/09/qual-o-custo-de-subir-a-escada-social.shtml
+  paper: allegory-of-the-favela
   date: 24 de setembro de 2024.
 - lang: pt
   outlet: Estadão.
@@ -236,11 +262,13 @@ portuguese:
   outlet: O Globo.
   title: Oportunidade e estigma em Favelas.
   url: https://oglobo.globo.com/brasil/antonio-gois/coluna/2024/06/oportunidade-e-estigma-em-favelas.ghtml
+  paper: allegory-of-the-favela
   date: 17 de junho de 2024.
 - lang: pt
   outlet: Folha de São Paulo.
   title: Cidades com prefeitos do agro não desmataram mais que outras e geraram mais negócios, diz estudo.
   url: https://www1.folha.uol.com.br/mercado/2024/02/cidades-com-prefeitos-do-agro-nao-desmataram-mais-que-outras-e-geraram-mais-negocios-diz-estudo.shtml?utm_source=linkedin&utm_medium=social&utm_campaign=lifolha
+  paper: heroes-or-villains
   date: 19 de fevereiro 2024.
 - lang: pt
   outlet: Exame Agro.
