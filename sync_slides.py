@@ -231,11 +231,13 @@ def main():
     if yml_changed:
         log(f"{'would update' if dry else 'update'} content/teaching.yml (slides as of {latest})")
 
+    unchanged = (not copies and not stale and not yml_changed
+                 and json.dumps(manifest, sort_keys=True) == json.dumps(new_manifest, sort_keys=True))
+    if unchanged:
+        log(f"Slides unchanged ({len(decks)} decks, {latest}); nothing to do")
+        return
     if dry:
         log("dry run: nothing written")
-        return
-    if not copies and not stale and not yml_changed and json.dumps(manifest, sort_keys=True) == json.dumps(new_manifest, sort_keys=True):
-        log(f"Slides unchanged ({len(decks)} decks, {latest}); nothing to do")
         return
 
     SLIDES_DIR.mkdir(parents=True, exist_ok=True)
