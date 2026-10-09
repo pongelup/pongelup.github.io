@@ -190,7 +190,9 @@ def build():
         "wps": load("data/working_papers.yml"),
         "media": load("data/media.yml"),
         # cache-busting stamp: changes whenever site.css changes, so browsers fetch the new file
-        "css_version": __import__("hashlib").md5((ROOT / "assets/css/site.css").read_bytes()).hexdigest()[:8],
+        # (line endings normalized so the stamp is the same on every machine)
+        "css_version": __import__("hashlib").md5(
+            (ROOT / "assets/css/site.css").read_bytes().replace(bytes([13, 10]), bytes([10]))).hexdigest()[:8],
     }
     shared["news"] = merged_news(load("data/news.yml").get("items") or [], shared["media"])
     shared["home_news"] = home_news(shared["news"])
