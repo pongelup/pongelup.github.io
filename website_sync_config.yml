@@ -1,0 +1,22 @@
+# Settings for the unattended website automation (see README, "Automation").
+#
+# approved_runs_remaining: approval gate for the "Website Monthly Sync" task.
+#   While > 0, the monthly run does NOT publish. It commits its changes to a local branch
+#   "pending-sync" (in this repo and in the CV Overleaf repo), writes
+#   _review/PENDING_SYNC_<YYYY-MM>.md, and leaves an Outlook DRAFT for Leo (never sent).
+#   Each time Leo approves a pending sync, Claude merges it, pushes, and lowers this number by one.
+#   At 0, the monthly run publishes directly (site push, CV push, then sync_cv.py).
+approved_runs_remaining: 2
+
+# Papers that stay in the CV but are never shown on the website (matched by title, case-insensitive,
+# ignoring punctuation). The monthly sync never adds these to data/working_papers.yml.
+site_exclude:
+  - "Fifty Shades of Green"
+  - "How Does ESG Matter for Firm Performance, Really?"
+
+# Class slides (sync_slides.py). Folder names are used as titles unless overridden here.
+slides:
+  course_dir: "Teaching/MBA Courses/MBA - Leandro Pongeluppe/Mgmt 6110"   # relative to "Assistant Professor"
+  title_overrides:
+    5: "International Strategies and Entry Modes"    # the folder name has a typo ("Startegies")
+  case_overrides: {}

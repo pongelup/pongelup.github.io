@@ -39,8 +39,8 @@
 
   <section class="section lines" id="class-slides">
     <h3>{{ page.slides_heading | safe }}</h3>
-    <p>{{ page.slides_intro }}</p>
-    {% for s in page.slides %}<p><a href="{{ s.url }}"><b>{{ s.title }}</b>: {{ s.case }}</a></p>
+    <p>{{ page.slides_intro }}{% if page.slides_semester %}. Most recent versions, {{ page.slides_semester }}.{% endif %}</p>
+    {% for s in page.slides %}<p><a href="{{ s.url }}"><b>{{ s.title }}</b>: {{ s.case }}</a>{% if s.semester %} <small>({{ s.semester }})</small>{% endif %}</p>
     {% endfor %}
     <small class="note-line">{{ page.slides_note }}</small>
   </section>

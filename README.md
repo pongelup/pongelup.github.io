@@ -22,6 +22,9 @@ HTML is committed so GitHub Pages serves it directly (no Jekyll, no build step o
 | `index.html`, `home/`, `news/` (redirect), `cv/`, `research/`, `teaching/`, `extension/`, `cia-framework/`, `personal/`, `404.html` | Generated pages (do not edit by hand) |
 | `CNAME` | Custom domain `www.leandropongeluppe.com` |
 | `PENDING_FIXES.md` | Audit findings waiting for Leo's approval |
+| `sync_cv.py`, `sync_slides.py` | Unattended CV and class-slide sync (see Automation) |
+| `website_sync_config.yml` | Automation settings: approval counter, papers kept off the site, slide title overrides |
+| `_review/` (not in git) | Sync logs, monthly sync summaries (`PENDING_SYNC_<YYYY-MM>.md`), CV previews |
 
 Text fields accept inline HTML (`<i>`, `<b>`, `<a href="...">`). Keep YAML indentation (two spaces) and
 wrap text containing a colon or quotes in double quotes, or use a `>-` block as in the existing entries.
@@ -61,8 +64,8 @@ Published papers are text only (no figures); figures appear only on working pape
 
 3. Rebuild (`python build.py`). The title and a "PDF" link point to the local file; the DOI link stays.
 
-Reports go in `assets/reports/` (linked from `content/extension.yml`) and class slides in `assets/slides/`
-(linked from `content/teaching.yml`), the same way.
+Reports go in `assets/reports/` (linked from `content/extension.yml`) the same way. Class slides in
+`assets/slides/` and the slides list in `content/teaching.yml` are maintained by `sync_slides.py` (see Automation).
 
 ## Add a working paper
 
@@ -94,6 +97,8 @@ describes the photo). The banners alternate page by page in navigation order; to
 `assets/img/` and change `banner:`.
 
 ## Update the CV
+
+This is automatic: the daily "Website CV Sync" task (see Automation) does steps 2 and 3 after any CV commit. By hand:
 
 1. Edit and compile the CV in the CV Overleaf repo (`Webpage\CV Overleaf`).
 2. Copy the compiled PDF over `assets/cv/Leandro_Pongeluppe_CV.pdf`.
@@ -135,3 +140,84 @@ StatCounter project 12004789 (the same project the Google Sites version used) is
 from `templates/base.html`, with the original settings (`sc_invisible=1`, `sc_security="4ceffa89"`,
 `sc_https=1`). No Google Analytics ID was found on the old site, so none is included; to add one later,
 set `ga4_id` in `data/site.yml`.
+
+## Automation
+
+Two Windows scheduled tasks keep the site current. They run ONLY on **MGMT-LEOP-WL01**: this repo and
+the CV Overleaf repo live in Dropbox and are shared by all of Leo's machines, and two machines running git
+on the same repo can corrupt it. Every runner checks `$env:COMPUTERNAME` and exits on any other machine
+(the name is `$AllowedMachine` at the top of `website_common.ps1`). Both tasks run as Leo, only while he is
+logged on, start late if a run was missed (StartWhenAvailable), never wake the machine, and launch hidden
+through `wscript.exe`, like the morning brief.
+
+Scripts live in `<Dropbox>\Softwares\Claude Code\Automation\Website\`: launchers `launch_website_*.vbs`,
+runners `run_website_*.ps1`, shared settings `website_common.ps1`, the Claude prompt
+`website_monthly_sync_prompt.md`, the draft-only Outlook helper `create_sync_draft.ps1`, and the installer
+`install_website_tasks.ps1`.
+
+| Task | When | What |
+|---|---|---|
+| Website CV Sync | Daily, 06:15 | `python sync_cv.py`: pull the CV Overleaf repo; if it moved, compile with Tectonic, copy the PDF to `assets/cv/`, rebuild, commit, push. No AI. "CV unchanged" is the normal result. |
+| Website Monthly Sync | First Monday of each month, 07:30 | (a) `sync_slides.py`; (b) `claude --print` with `website_monthly_sync_prompt.md`, which brings `data/working_papers.yml` and the CV's `sections/03c_working_papers.tex` in line with the project tracker (`projects.json`) and writes a summary; (c) rebuild and checks; (d) publish (push both repos, then `sync_cv.py`) or hold for approval. |
+
+**Logs**: `<Dropbox>\Softwares\Claude Code\Automation\Website\Logs\website_cv_sync_<YYYY-MM>.log` and
+`website_monthly_sync_<YYYY-MM>.log` (machine name on every line), plus `_review/sync_cv.log` and
+`_review/sync_slides.log` written by the Python scripts.
+
+**Class slides** (`sync_slides.py`, deterministic, no AI). Scans the MGMT 6110 folder
+(`Teaching\MBA Courses\MBA - Leandro Pongeluppe\Mgmt 6110`): each `Class N - <Title>` folder and `Z - Slides`,
+top level only, for decks named `MGMT 6110 Global Class N - <Case>.pdf`. Skips names containing backup, old,
+or previous, and PDFs over 90 MB. Keeps the most recently modified deck per class, copies it to
+`assets/slides/MGMT6110_Class_NN_<Title>.pdf`, rewrites the `slides:` list and `slides_semester:` in
+`content/teaching.yml` (semester from the file date: Spring Jan-May, Summer Jun-Aug, Fall Sep-Dec), rebuilds,
+commits, and pushes (from `main` only) when something changed. `assets/slides/slides_manifest.json` lists the
+files it manages; it never deletes files it did not create. Titles come from the class folder names; fix a
+title in `website_sync_config.yml` (`slides: title_overrides`). By hand: `python sync_slides.py --dry-run`.
+
+**Monthly sync rules** (in the prompt): only papers at Writing stage or later; statuses give journal and round;
+order second-round R&R, first-round R&R, submitted, working papers; a new paper gets a two-sentence description
+of setting, data, and approach (no results or numbers) and no figure; tracker labels are never used as titles;
+papers missing from the tracker are kept and listed, never removed silently; papers in `site_exclude` stay in
+the CV but off the site; no forced page breaks in the CV.
+
+### Approving a monthly sync
+
+While `approved_runs_remaining` in `website_sync_config.yml` is above 0, the monthly run publishes nothing.
+It commits the site changes to a local branch `pending-sync` in this repo and the CV changes to a local branch
+`pending-sync` in the CV Overleaf repo, puts both repos back on `main`, writes
+`_review/PENDING_SYNC_<YYYY-MM>.md` (first line `Status: PENDING`, then every change as old -> new) and a CV
+preview `_review/PENDING_SYNC_<YYYY-MM>_CV.pdf`, and leaves an Outlook **draft** (never sent) to
+pongelup@wharton.upenn.edu titled "Website monthly sync <Month YYYY>: approval needed". While a summary is
+still PENDING, the morning brief shows "Website monthly sync awaiting your approval".
+
+To approve, tell Claude in an interactive session: "approve the website monthly sync for <Month YYYY>". Claude then:
+
+1. Reads the summary and checks `git diff main..pending-sync` in both repos.
+2. CV repo: `git checkout main`, `git pull`, `git merge pending-sync` (on a conflict, keep the co-author/Overleaf
+   version and ask), `git push`, `git branch -d pending-sync`.
+3. Site repo: `git checkout main`, `git pull`, `git merge pending-sync`, `python build.py`, commit if the build
+   changed anything, `git push origin main`, `git branch -d pending-sync`.
+4. `python sync_cv.py` (compiles and publishes the updated CV PDF).
+5. Sets the summary's first line to `Status: APPROVED <YYYY-MM-DD>`, lowers `approved_runs_remaining` by one,
+   commits `website_sync_config.yml`, and pushes.
+
+To reject: Claude deletes both `pending-sync` branches and sets the first line to `Status: REJECTED <YYYY-MM-DD>`.
+A later monthly run resets `pending-sync` from `main` and marks an older pending summary `SUPERSEDED`. At 0 the
+monthly run pushes directly; if a check fails (build, an excluded paper on the site, a forced page break, or a CV
+that does not compile) it falls back to the approval path for that month. If a repo is dirty or off `main` when
+the run starts, it changes nothing and writes a `Status: PENDING` summary that says BLOCKED and why.
+
+**Dry run** (no pull, branch, commit, push, or draft; writes only `_review/DRYRUN_SYNC_<YYYY-MM>.md`):
+
+```powershell
+& "C:\Users\pongelup\Dropbox\Softwares\Claude Code\Automation\Website\run_website_monthly_sync.ps1" -DryRun
+```
+
+### Pause, resume, run now, reinstall
+
+```powershell
+Disable-ScheduledTask -TaskName "Website Monthly Sync"   # pause (same for "Website CV Sync")
+Enable-ScheduledTask  -TaskName "Website Monthly Sync"   # resume
+Start-ScheduledTask   -TaskName "Website CV Sync"        # run now
+& "C:\Users\pongelup\Dropbox\Softwares\Claude Code\Automation\Website\install_website_tasks.ps1"   # (re)install, on MGMT-LEOP-WL01 only
+```
