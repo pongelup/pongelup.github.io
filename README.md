@@ -11,7 +11,7 @@ HTML is committed so GitHub Pages serves it directly (no Jekyll, no build step o
 | `data/site.yml` | Site name, navigation, footer icons, StatCounter settings |
 | `data/news.yml` | News items. `build.py` merges them with `data/media.yml` into one dated "News and Media" list (newest first, duplicates by URL removed): all of it on Practice & Media (`/extension/#news`); Home shows the 3 most recent items about different papers (see "One item per paper on Home"). `/news/` only redirects there |
 | `data/publications.yml` | Published papers: `international`, `brazilian`, `book_chapters` (citation and short description; text only, no figures) |
-| `data/working_papers.yml` | Working papers, grouped by research pillar, ordered by closeness to publication (the CV lists two more papers that the site leaves out) |
+| `data/working_papers.yml` | Working papers, grouped by research pillar (Poverty and Inequality; Climate Change; Healthcare and Security, which holds the terrorism papers), ordered by closeness to publication (the CV lists two more papers that the site leaves out) |
 | `data/media.yml` | Media mentions (`english`, `portuguese`), merged into the "News and Media" list on Practice & Media |
 | `content/<page>.yml` | Free text of each page (banner photo, title, SEO description, "Last update" line); the Research pillar cards live in `content/research.yml` |
 | `templates/` | Jinja2 templates (`base.html` holds header and footer; `_statcounter.html` holds the StatCounter snippet, included by `base.html` and by the `/news/` redirect in `news.html`) |
@@ -106,7 +106,8 @@ publication (second-round R&R, first-round R&R, submitted, working paper):
 
 ## Research pillar cards and SDG icons
 
-The three cards at the top of the Research page live in `content/research.yml` (`program`). Each card has
+The three cards at the top of the Research page (Poverty and Inequality; Climate Change; Healthcare and
+Security) live in `content/research.yml` (`program`). Each card has
 `image` (optional photo in `assets/img/`), `text`, and `sdgs` (a list of SDG numbers). Icons are read from
 `assets/img/sdg/sdg_NN.png` (two digits, for example `sdg_06.png`) and appear only when the file exists.
 

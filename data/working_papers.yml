@@ -1,4 +1,6 @@
-# Working papers on the Research page, grouped by the three research pillars.
+# Working papers on the Research page, grouped by the three research pillars: Poverty and Inequality,
+# Climate Change, and Healthcare and Security (terrorism and security papers go under Healthcare and Security,
+# Leo's decision of 2026-10-09).
 # Within each pillar, papers are ordered by closeness to publication: second-round R&R, first-round R&R,
 # submitted or under review, then working papers. The CV (sections/03c_working_papers.tex) keeps the full list;
 # "Fifty Shades of Green" and "How Does ESG Matter for Firm Performance, Really?" are in the CV but not on the site.
@@ -18,7 +20,7 @@
 heading: "Working Papers"
 
 groups:
-  - topic: "Poverty, Inequality, and Violence"
+  - topic: "Poverty and Inequality"
     papers:
       - title: "Not from Ipanema: Security Interventions and Organizational Life in Brazilian Favelas"
         coauthors: "in collaboration with Daphne Coelho, Aline Gatignon, and Sérgio Lazzarini."
@@ -27,14 +29,6 @@ groups:
         image: wp-upp-staggered-jobs.png
         image_alt: "Event-study plot of the log number of formal jobs in favelas before and after a UPP arrived, estimated with five staggered difference-in-differences estimators"
         caption: "The design: a staggered difference-in-differences event study of formal jobs in favelas around the arrival of a UPP, with five estimators."
-
-      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
-        coauthors: "in collaboration with Leandro Nardi."
-        status: "Submitted to Strategic Management Journal."
-        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
-        image: wp-terrorism-gtd-map.png
-        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
-        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
 
       - title: "Internalizing and Emancipating: A Dialogical Theory of Stakeholder Governance"
         coauthors: ""
@@ -84,17 +78,16 @@ groups:
         image_alt: "Three world maps of ocean surface conditions, two on top and one centered below: (a) salinity in parts per thousand, (b) sea surface temperature in degrees Celsius, and (c) chlorophyll-a concentration in milligrams per cubic meter, each with its own color scale"
         caption: "The ocean conditions we track: global maps of (a) surface salinity, (b) sea surface temperature, and (c) chlorophyll-a concentration, 2015 Q4."
 
-      - title: "The Influence of Climate Change on Terrorism"
-        coauthors: "in collaboration with Leandro Nardi."
-        status: "Working paper."
-        description: "We combine a worldwide grid of one-degree cells with yearly measures of water balance, from drought to unusually wet conditions, and records of terrorist attacks over three decades. Using panel models with spatial corrections, we examine how climate conditions in a cell and in its neighborhood relate to terrorism."
-        # Panels A and B of figure_26_projection.png (Analyses_LP\Grid Cells\Figures 3), cropped from the original (gallery2 G-a).
-        image: wp-climate-terrorism-projection-ssp585-2041-2060.png
-        image_alt: "Two world maps side by side for SSP5-8.5, 2041 to 2060: (A) projected change in December SPEI-12, in standard deviations of each cell's 1991-2020 distribution, brown for drier and green for wetter; (B) projected change in the annual probability of at least one terrorist attack, in percentage points, red for higher and blue for lower"
-        caption: "Projected drought conditions (change in December SPEI-12) and predicted change in the probability of terrorist attacks under SSP5-8.5, 2041-2060, ensemble median of 16 CMIP6 models."
-
-  - topic: "Healthcare"
+  - topic: "Healthcare and Security"
     papers:
+      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Submitted to Strategic Management Journal."
+        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
+        image: wp-terrorism-gtd-map.png
+        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
+        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
+
       - title: "Stakeholder Architecture under Resource Constraints: A Configurational Approach to Healthcare Provision in Sub-Saharan Africa"
         coauthors: "in collaboration with Aline Gatignon, Julien Clément, and Luk N. Van Wassenhove."
         status: "Working paper."
@@ -113,3 +106,12 @@ groups:
         image: wp-zika-map-and-cases.png
         image_alt: "Two panels: (a) map of Brazilian municipalities shaded by the microcephaly rate per 10,000 live births in 2016, with Pernambuco outlined; (b) bar chart of recorded Zika cases by epidemiological week, 2016 to 2019"
         caption: "The setting: (a) microcephaly rate per 10,000 live births by municipality, 2016, Pernambuco outlined (SINASC/DATASUS, ICD-10 Q02); (b) recorded Zika cases by epidemiological week, 2016 to 2019 (SINAN)."
+
+      - title: "The Influence of Climate Change on Terrorism"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Working paper."
+        description: "We combine a worldwide grid of one-degree cells with yearly measures of water balance, from drought to unusually wet conditions, and records of terrorist attacks over three decades. Using panel models with spatial corrections, we examine how climate conditions in a cell and in its neighborhood relate to terrorism."
+        # Panels A and B of figure_26_projection.png (Analyses_LP\Grid Cells\Figures 3), cropped from the original (gallery2 G-a).
+        image: wp-climate-terrorism-projection-ssp585-2041-2060.png
+        image_alt: "Two world maps side by side for SSP5-8.5, 2041 to 2060: (A) projected change in December SPEI-12, in standard deviations of each cell's 1991-2020 distribution, brown for drier and green for wetter; (B) projected change in the annual probability of at least one terrorist attack, in percentage points, red for higher and blue for lower"
+        caption: "Projected drought conditions (change in December SPEI-12) and predicted change in the probability of terrorist attacks under SSP5-8.5, 2041-2060, ensemble median of 16 CMIP6 models."

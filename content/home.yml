@@ -4,7 +4,7 @@ hero_title: "Welcome!"
 # Banner: any photo in assets/img/ (optional banner_alt: describes it for screen readers).
 banner: banner-rocinha-gavea-drone.jpg
 seo_title: "Leandro S. Pongeluppe | Wharton School"
-description: "Leandro S. Pongeluppe is an Assistant Professor of Management at the Wharton School, University of Pennsylvania. He studies how firms, governments, and communities organize to reduce poverty, protect the environment, and expand access to healthcare."
+description: "Leandro S. Pongeluppe is an Assistant Professor of Management at the Wharton School, University of Pennsylvania. He studies how firms, governments, and communities organize to reduce poverty and inequality, address climate change, and improve healthcare and security."
 last_update: "Last update: October 2026."
 
 headshot: headshot.jpg
@@ -31,14 +31,15 @@ news_heading: "News"
 news_more: "All news and media"
 
 program_heading: "Research Program"
-# Short version of the Research Program block (full version on the Research page).
+# Short version of the Research Program block (full version on the Research page). Pillars: Poverty and
+# inequality; Climate change; Healthcare and security.
 program:
-  - pillar: "Poverty, inequality, and violence"
-    text: "how firms and public policy shape opportunity in favelas and how violence reshapes multinational business."
+  - pillar: "Poverty and inequality"
+    text: "how firms and public policy shape opportunity in favelas."
   - pillar: "Climate change"
     text: "how firms and communities protect the Amazon rainforest and the oceans."
-  - pillar: "Healthcare"
-    text: "how technology and stakeholder management improve care in HIV/AIDS clinics in Africa, and how the Zika epidemic affected families across racial groups in Brazil."
+  - pillar: "Healthcare and security"
+    text: "how technology and stakeholder management improve care in HIV/AIDS clinics in Africa, how the Zika epidemic affected families across racial groups in Brazil, and how terrorism and related climate conditions shape where multinational corporations operate."
 program_more: "See the full research program"
 
 selected_heading: "Selected Publications"

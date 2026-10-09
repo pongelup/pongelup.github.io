@@ -36,7 +36,7 @@ meta description and Open Graph tags; News section driven by `data/news.yml`; al
 - [x] C4. Leviathan as A Client: "Second round at Strategic Management Journal"; title ends "to Address Water Scarcity" on both.
 - [x] C5. Topic headings renamed to the three pillars.
 - [x] C6. Statuses per Leo (2026-10-09): Not from Ipanema "First round at Organization Science"; AMR "Working paper (desk edit at Academy of Management Review)".
-- [ ] C7. Leo to eyeball: placement of the AMR paper and #MeToo under "Poverty, Inequality, and Violence" and of the ESG paper under "Climate Change"; the Fifty Shades results chart (`wp-green-pixels.png`) was dropped from the page because it shows a result; the #MeToo method figure (Walmart report page with detected faces) was NOT posted (third-party image of identifiable people); Daphne Coelho vs Daphne Coelho Dutra.
+- [ ] C7. Leo to eyeball: placement of the AMR paper and #MeToo under "Poverty and Inequality" (pillar renamed 2026-10-09) and of the ESG paper under "Climate Change"; the Fifty Shades results chart (`wp-green-pixels.png`) was dropped from the page because it shows a result; the #MeToo method figure (Walmart report page with detected faces) was NOT posted (third-party image of identifiable people); Daphne Coelho vs Daphne Coelho Dutra.
 - [ ] C8. #MeToo status changes to "Under review at Strategic Management Journal" once Michelle submits (planned 10-11 October 2026). Zika ("Who Bears the Epidemic?") not listed: not in the CV, analysis stage.
 
 ## D. Teaching (`content/teaching.yml`)
