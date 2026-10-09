@@ -63,12 +63,13 @@ cases_note: "* The English version of all cases can be shared upon request."
 
 slides_heading: "Class Slides<sup>**</sup>"
 slides_intro: "Wharton MBA MGMT 6110: Managing the Established Enterprise (Global Module)"
+slides_semester: "Fall 2026"
 slides:
-  - { url: "/assets/slides/MGMT6110_Class_1_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Grolsch Beer case" }
-  - { url: "/assets/slides/MGMT6110_Class_2_Institutional_Environment.pdf", title: "Class 2. The Institutional Environment in Global Markets", case: "Corruption in International Business case" }
-  - { url: "/assets/slides/MGMT6110_Class_3_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Market", case: "European Super League caselet" }
-  - { url: "/assets/slides/MGMT6110_Class_4_International_Strategies_Governance.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara caselets" }
-  - { url: "/assets/slides/MGMT6110_Class_5_International_Strategies_Entry_Modes.pdf", title: "Class 5. International Strategies and Entry Modes", case: "Walmart in China case" }
-  - { url: "/assets/slides/MGMT6110_Class_6_Institutional_Voids_Business_Groups.pdf", title: "Class 6. Institutional Voids, Political Risk, and Business Groups", case: "Tata Group case" }
-  - { url: "/assets/slides/MGMT6110_Class_7_Climate_Inclusive_Innovation_Stakeholders.pdf", title: "Class 7. Climate Change, Inclusive Innovation, and Stakeholder Management", case: "Natura case" }
+  - { url: "/assets/slides/MGMT6110_Class_01_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Ferrero Group", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_02_The_Institutional_Environment_in_Global_Markets.pdf", title: "Class 2. The Institutional Environment in Global Markets", case: "Corruption in International Business", semester: "Fall 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_03_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Markets", case: "European Super League", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_04_International_Strategies_and_Governance_Structures.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_05_International_Strategies_and_Entry_Modes.pdf", title: "Class 5. International Strategies and Entry Modes", case: "Walmart", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_06_Institutional_Voids_Political_Risk_and_Business_Groups.pdf", title: "Class 6. Institutional Voids, Political Risk, and Business Groups", case: "McDonalds and Tata Group", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_07_Stakeholder_Management_Environmental_Externalities.pdf", title: "Class 7. Stakeholder Management, Environmental Externalities, and Innovation for the Bottom of the Pyramid", case: "Natura Co", semester: "Spring 2026" }
 slides_note: "** Copyrights of the author. Permission for use may be granted upon reasonable request."
