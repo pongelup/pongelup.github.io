@@ -3,6 +3,7 @@
 {% if item.image and asset_exists('img/' ~ item.image) %}
 <figure class="wp-fig{% if item.image_class %} {{ item.image_class }}{% endif %}">
   <img src="{{ base }}/assets/img/{{ item.image }}" alt="{{ item.image_alt }}" loading="lazy">
+  {% if item.image_credit %}<p class="wp-credit">{{ item.image_credit }}</p>{% endif %}
   {% if item.caption %}<figcaption><small>{{ item.caption }}</small></figcaption>{% endif %}
 </figure>
 {% endif %}

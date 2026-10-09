@@ -99,6 +99,7 @@ publication (second-round R&R, first-round R&R, submitted, working paper):
         image: my-figure.png          # optional; put the file in assets/img/ (no SDG icons in figures)
         image_alt: "Describe what the figure depicts"
         caption: "Neutral description of the setting (not a result)."
+        image_credit: "Photo: Name"   # optional; small credit line right under the image
         image_class: wp-fig-tall      # optional; for a tall figure, shows it narrower (250 px) so it takes
                                       # about the same space as the other figures
 ```

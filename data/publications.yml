@@ -16,6 +16,13 @@
 #            url: "/assets/papers/<file>.pdf". Keep the DOI in doi.
 
 international:
+  - authors: "Derksen, L., McGahan, A. M., & Pongeluppe, L. S. (Forthcoming)."
+    title: "The Lifesaving Impact of Electronic Medical Records for HIV Patients."
+    url: "/assets/papers/2025_REStat_Derksen_McGahan_Pongeluppe_EMR_HIV.pdf"
+    after: "<i>Review of Economics and Statistics.</i> Published online October 2025."
+    doi: "https://doi.org/10.1162/rest.a.1617"
+    description: "We study the replacement of paper-based patient files with electronic medical records in HIV clinics in Malawi. An event study of clinic records shows that the new systems improved patient retention and reduced AIDS deaths, mainly through efficiency gains in managing patient data."
+
   - authors: "Xuan, D., Hsieh, M. A., Pongeluppe, L. S., Weaver, M. M., Mann, M. E., Jerolmack, D. J., & Ulloa, H. N. (2026)."
     title: "Climate extremes and urbanization drive flood tipping points at the city-river interface."
     url: "/assets/papers/2026_npjNH_Xuan_et_al_Flood_Tipping_Points.pdf"
@@ -44,13 +51,6 @@ international:
     doi: "https://doi.org/10.1017/beq.2025.3"
     note: "Distinguished Paper Award in Cooperative Strategy at the 80th Academy of Management Annual Meeting."
     description: "An in-depth case study of Natura, a Brazilian cosmetics company that sources natural inputs from Amazon communities through supplier relations open to multiple buyers, including competitors. The study shows how a morally informed normative core, shaped by the company's controlling shareholders, sustained this open relational strategy."
-
-  - authors: "Derksen, L., McGahan, A. M., & Pongeluppe, L. S. (2025)."
-    title: "The Lifesaving Impact of Electronic Medical Records for HIV Patients."
-    url: "/assets/papers/2025_REStat_Derksen_McGahan_Pongeluppe_EMR_HIV.pdf"
-    after: "<i>Review of Economics and Statistics.</i> Published online October 2025."
-    doi: "https://doi.org/10.1162/rest.a.1617"
-    description: "We study the replacement of paper-based patient files with electronic medical records in HIV clinics in Malawi. An event study of clinic records shows that the new systems improved patient retention and reduced AIDS deaths, mainly through efficiency gains in managing patient data."
 
   - authors: "Cordeiro, G. S., Arvate, P. R., Story, J., & Pongeluppe, L. S. (2025)."
     title: "Heroes or Villains? Agribusiness Leaders in the Amazon Region."

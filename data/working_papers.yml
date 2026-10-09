@@ -11,6 +11,7 @@
 #   links (optional list of {url, label}),
 #   description (two sentences: setting, data, approach; no results),
 #   image (optional figure file in assets/img/; leave "" for none), image_alt, caption,
+#   image_credit (optional; for example "Photo: Name", shown in small print right under the image),
 #   image_class (optional; wp-fig-tall shows a tall figure narrower so it takes about the same space as the others).
 #   Figures must not contain SDG icons (those appear only on the pillar cards).
 
@@ -66,19 +67,22 @@ groups:
         coauthors: "in collaboration with Elis Regina Monte Feitosa and Maria Sylvia Macchione Saes."
         status: "Second round at Academy of Management Perspectives."
         description: "We study the community-based management of the pirarucu, a giant Amazonian fish, in two sustainable-use reserves in the Brazilian Amazon, the RDS Mamirauá and the RESEX Médio Juruá. Drawing on fieldwork with community associations and their partners, we examine how value is created and distributed among multiple stakeholders when protecting biodiversity is the shared purpose."
-        image: wp-pirarucu-fisher.jpg
+        # Cropped top and bottom from wp-pirarucu-fisher.jpg (kept in assets/img) so it is less tall.
+        image: wp-pirarucu-fisher-wide.jpg
         image_alt: "A fisher carrying a large pirarucu on the shoulders along a forest path in the Brazilian Amazon, with a second fisher behind him"
         caption: "The setting: fishers carrying a pirarucu out of the floodplain in a sustainable-use reserve in the Brazilian Amazon."
+        image_credit: "Photo: Elis Regina Feitosa"
 
       - title: "Global Footprint of Desalination in the Oceans"
         coauthors: "in collaboration with Xinni Wu, Ilze Kivleniece, Sérgio Lazzarini, and Hugo N. Ulloa."
         status: "Under review at Nature Sustainability."
         description: "We study the environmental footprint of desalination plants on the surrounding oceans worldwide. We link the locations and start dates of desalination plants to satellite measurements of ocean conditions, such as salinity, sea surface temperature, and chlorophyll, in a staggered difference-in-differences design."
         # Previous figure (point map of plant locations), kept in assets/img but no longer displayed: wp-desal2-plants-map.png
-        image: wp-desal2-ocean-conditions-3panel.png
-        image_alt: "Three stacked world maps of ocean surface conditions: (a) salinity in parts per thousand, (b) sea surface temperature in degrees Celsius, and (c) chlorophyll-a concentration in milligrams per cubic meter, each with its own color scale"
+        # Triangle layout (a and b on top, c centered below) built from the paper's panel files
+        # fig1_panelB/C/D_*.png; the earlier stacked version is kept in assets/img: wp-desal2-ocean-conditions-3panel.png
+        image: wp-desal2-ocean-conditions-triangle.png
+        image_alt: "Three world maps of ocean surface conditions, two on top and one centered below: (a) salinity in parts per thousand, (b) sea surface temperature in degrees Celsius, and (c) chlorophyll-a concentration in milligrams per cubic meter, each with its own color scale"
         caption: "The ocean conditions we track: global maps of (a) surface salinity, (b) sea surface temperature, and (c) chlorophyll-a concentration, 2015 Q4."
-        image_class: wp-fig-tall   # tall three-panel figure: shown narrower so it takes about the same space as the others
 
       - title: "The Influence of Climate Change on Terrorism"
         coauthors: "in collaboration with Leandro Nardi."
@@ -96,8 +100,11 @@ groups:
         status: "Working paper."
         description: "We study North Star Alliance, an NGO that runs roadside clinics offering HIV/AIDS and other health services to truck drivers and other high-risk populations along transport corridors in sub-Saharan Africa. Using qualitative and survey data from its clinics, we apply fuzzy-set qualitative comparative analysis (fsQCA) to compare the configurations of stakeholder relationships behind each clinic's healthcare delivery."
         image: wp-northstar-wellness-centre.jpg
-        image_alt: "Ilula Mtua Wellness Centre, a blue North Star Alliance roadside clinic in Africa (picture from the North Star Alliance webpage)"
-        caption: "The setting: a North Star Alliance roadside wellness centre (picture from the North Star Alliance webpage)."
+        image_alt: "Ilula Mtua Wellness Centre, a blue North Star Alliance roadside clinic in Africa"
+        caption: "The setting: a North Star Alliance roadside wellness centre."
+        # Source: slide 9 of Webpage\Pictures and Covers\SDGs and Projects.pptx, noted there as "Picture from North Star
+        # Alliance webpage." No EXIF or photographer name survives, so the credit goes to the organization.
+        image_credit: "Photo: North Star Alliance"
 
       - title: "Who Bears the Epidemic?"
         coauthors: "in collaboration with Carlos Inoue."
