@@ -9,10 +9,15 @@ last_update: "Last update: October 2026."
 interests_heading: "Teaching Interests"
 interests: "Strategic Management, Global Strategy, Global Challenges, Sustainability, Impact Investing, Inclusive Innovations, and Public Innovations."
 
-# Class photo (file in assets/img/; leave "" for none). Student name tents are pixelated so no names are legible.
-photo: teaching-mgmt6110-class-2022.jpg
-photo_alt: "Leandro Pongeluppe sitting on the classroom floor with his Wharton MBA class of MGMT 6110 in a tiered lecture hall, Fall 2022"
-photo_caption: "MGMT 6110: Managing the Established Enterprise, Wharton MBA, Fall 2022."
+# Class photos (files in assets/img/; use [] for none). Shown side by side at the same height on desktop, stacked on mobile.
+# Student name tents are pixelated in both photos so no names are legible.
+photos:
+  - file: teaching-mgmt6110-class-2022.jpg
+    alt: "Leandro Pongeluppe sitting on the classroom floor with his Wharton MBA class of MGMT 6110 in a tiered lecture hall, Fall 2022"
+    caption: "MGMT 6110: Managing the Established Enterprise, Wharton MBA, Fall 2022."
+  - file: teaching-wharton-esl-case.jpg
+    alt: "Leandro Pongeluppe at the front of a Wharton classroom wearing a football jersey and juggling a ball, with a slide of a stadium crowd on the screen and students watching from their desks"
+    caption: "Teaching at Wharton."
 
 awards_heading: "Teaching Awards"
 awards:

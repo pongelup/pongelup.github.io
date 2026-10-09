@@ -4,11 +4,16 @@
   <section class="section">
     <h2>{{ page.interests_heading }}</h2>
     <p>{{ page.interests }}</p>
-    {% if page.photo and asset_exists('img/' ~ page.photo) %}
-    <figure class="teaching-photo">
-      <img src="{{ base }}/assets/img/{{ page.photo }}" alt="{{ page.photo_alt }}" loading="lazy">
-      {% if page.photo_caption %}<figcaption>{{ page.photo_caption }}</figcaption>{% endif %}
-    </figure>
+    {% set shown = [] %}{% for ph in page.photos or [] %}{% if ph.file and asset_exists('img/' ~ ph.file) %}{% set _ = shown.append(ph) %}{% endif %}{% endfor %}
+    {% if shown %}
+    <div class="teaching-photos">
+      {% for ph in shown %}
+      <figure class="teaching-photo">
+        <img src="{{ base }}/assets/img/{{ ph.file }}" alt="{{ ph.alt }}" loading="lazy">
+        {% if ph.caption %}<figcaption>{{ ph.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
     {% endif %}
   </section>
 

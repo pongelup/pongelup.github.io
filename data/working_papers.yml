@@ -73,9 +73,10 @@ groups:
         coauthors: "in collaboration with Xinni Wu, Ilze Kivleniece, Sérgio Lazzarini, and Hugo N. Ulloa."
         status: "Under review at Nature Sustainability."
         description: "We study the environmental footprint of desalination plants on the surrounding oceans worldwide. We link the locations and start dates of desalination plants to satellite measurements of ocean conditions, such as salinity, sea surface temperature, and chlorophyll, in a staggered difference-in-differences design."
-        image: wp-desal2-plants-map.png
-        image_alt: "World map of coastal and inland desalination plant locations, with buffer zones of 50 to 1,000 kilometers drawn in the ocean around coastal plants"
-        caption: "The setting: coastal and inland desalination plants worldwide, with the ocean buffer zones used to measure their footprint."
+        # Previous figure (point map of plant locations), kept in assets/img but no longer displayed: wp-desal2-plants-map.png
+        image: wp-desal2-ocean-conditions-3panel.png
+        image_alt: "Three stacked world maps of ocean surface conditions: (a) salinity in parts per thousand, (b) sea surface temperature in degrees Celsius, and (c) chlorophyll-a concentration in milligrams per cubic meter, each with its own color scale"
+        caption: "The ocean conditions we track: global maps of (a) surface salinity, (b) sea surface temperature, and (c) chlorophyll-a concentration, 2015 Q4."
 
       - title: "The Influence of Climate Change on Terrorism"
         coauthors: "in collaboration with Leandro Nardi."

@@ -131,9 +131,15 @@ main { display: block; }
 .hero-credit { position: absolute; right: 10px; bottom: 6px; z-index: 2; margin: 0; font-family: var(--sans); font-size: 11.5px; color: rgba(255,255,255,0.9); text-shadow: 0 1px 3px rgba(0,0,0,0.7); }
 .hero-credit a { color: inherit; text-decoration: none; }
 .hero-credit a:hover { text-decoration: underline; }
-.teaching-photo { margin: 28px 0 0; }
-.teaching-photo img { width: 100%; max-width: 860px; display: block; border-radius: 4px; }
-.teaching-photo figcaption { margin-top: 6px; color: var(--muted); font-family: var(--sans); font-size: 13px; }
+.teaching-photos { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 28px; align-items: flex-start; }
+.teaching-photo { margin: 0; flex: 0 0 auto; }
+.teaching-photo img { height: 400px; width: auto; max-width: none; display: block; border-radius: 4px; }
+.teaching-photo figcaption { width: 0; min-width: 100%; margin-top: 6px; color: var(--muted); font-family: var(--sans); font-size: 13px; }
+@media (max-width: 700px) {
+  .teaching-photos { flex-direction: column; }
+  .teaching-photo { width: 100%; }
+  .teaching-photo img { width: 100%; height: auto; max-width: 100%; }
+}
 .pillar-body { padding: 4px 20px 20px; }
 .pillar-card h3 { font-size: 18px; margin-top: 14px; }
 .pillar-card p { margin: 10px 0 0; text-align: left; }
