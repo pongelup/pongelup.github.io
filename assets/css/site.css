@@ -81,7 +81,10 @@ small, .small { font-family: var(--sans); font-size: 12px; line-height: 1.45; }
 .hero h1 {
   position: relative; z-index: 2; color: #fff; text-align: center;
   font-size: 70.7px; line-height: 1.1; letter-spacing: -0.5px;    /* 53pt */
-  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.55);
+  /* translucent plate so white titles stay legible on light, busy banners (e.g. the drone photo) */
+  background: rgba(38,50,56,0.55); padding: 6px 30px 10px; border-radius: 6px;
+  -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
 }
 
 /* ---------- Content ---------- */
