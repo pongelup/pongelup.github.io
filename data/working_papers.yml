@@ -32,7 +32,7 @@ groups:
 
       - title: "Internalizing and Emancipating: A Dialogical Theory of Stakeholder Governance"
         coauthors: ""
-        status: "Working paper (desk edit at Academy of Management Review)."
+        status: "Submitted to Academy of Management Review."
         description: "This conceptual paper treats the organization as a nexus of relationships with the stakeholders it affects. Drawing on transaction cost economics, the capability approach, and Paulo Freire's pedagogy, it develops a theory of stakeholder governance built on two levers, internalizing externalities and emancipating stakeholders, connected through dialogue."
         image: wp-amr-lever2-emancipation.png
         image_alt: "Diagram of individual well-being against initial endowment, with a deprivation zone, a newly emancipated range, and an emancipation zone"
@@ -69,7 +69,7 @@ groups:
 
       - title: "Global Footprint of Desalination in the Oceans"
         coauthors: "in collaboration with Xinni Wu, Ilze Kivleniece, Sérgio Lazzarini, and Hugo N. Ulloa."
-        status: "Under review at Nature Sustainability."
+        status: "Submitted to Nature Sustainability."
         description: "We study the environmental footprint of desalination plants on the surrounding oceans worldwide. We link the locations and start dates of desalination plants to satellite measurements of ocean conditions, such as salinity, sea surface temperature, and chlorophyll, in a staggered difference-in-differences design."
         # Previous figure (point map of plant locations), kept in assets/img but no longer displayed: wp-desal2-plants-map.png
         # Triangle layout (a and b on top, c centered below) built from the paper's panel files
@@ -80,14 +80,6 @@ groups:
 
   - topic: "Healthcare and Security"
     papers:
-      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
-        coauthors: "in collaboration with Leandro Nardi."
-        status: "Submitted to Strategic Management Journal."
-        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
-        image: wp-terrorism-gtd-map.png
-        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
-        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
-
       - title: "Stakeholder Architecture under Resource Constraints: A Configurational Approach to Healthcare Provision in Sub-Saharan Africa"
         coauthors: "in collaboration with Aline Gatignon, Julien Clément, and Luk N. Van Wassenhove."
         status: "Working paper."
@@ -106,6 +98,14 @@ groups:
         image: wp-zika-map-and-cases.png
         image_alt: "Two panels: (a) map of Brazilian municipalities shaded by the microcephaly rate per 10,000 live births in 2016, with Pernambuco outlined; (b) bar chart of recorded Zika cases by epidemiological week, 2016 to 2019"
         caption: "The setting: (a) microcephaly rate per 10,000 live births by municipality, 2016, Pernambuco outlined (SINASC/DATASUS, ICD-10 Q02); (b) recorded Zika cases by epidemiological week, 2016 to 2019 (SINAN)."
+
+      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Submitted to Strategic Management Journal."
+        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
+        image: wp-terrorism-gtd-map.png
+        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
+        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
 
       - title: "The Influence of Climate Change on Terrorism"
         coauthors: "in collaboration with Leandro Nardi."

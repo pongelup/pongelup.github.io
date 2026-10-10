@@ -48,10 +48,7 @@ def set_updated(month):
     s = cv_yml.read_text(encoding="utf-8")
     s = re.sub(r'^cv_updated: ".*?"', f'cv_updated: "{month}"', s, flags=re.M)
     cv_yml.write_text(s, encoding="utf-8")
-    home_yml = SITE / "content" / "home.yml"
-    s = home_yml.read_text(encoding="utf-8")
-    s = re.sub(r"Download CV \(PDF, updated [^)]*\)", f"Download CV (PDF, updated {month})", s)
-    home_yml.write_text(s, encoding="utf-8")
+    # The Home CV button carries no date (Leo, 2026-10-10), so home.yml is not touched.
 
 
 def main():

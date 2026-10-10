@@ -24,7 +24,7 @@ program:
     credit: "Photo: Johnny Miller / Unequal Scenes"
     credit_url: "https://unequalscenes.com"
     text: "I study how firms, nonprofits, and governments shape opportunity in communities marked by poverty and inequality. Much of this work takes place in Brazilian favelas, where I combine fieldwork and interviews with field experiments and administrative data to understand how organizations operate in disadvantaged places. I also study how public interventions in favelas reshape the organizational life of these communities. Throughout, I focus on the stakeholders these organizations affect and on who gains access to economic opportunity."
-    sdgs: [1, 2, 5, 8, 11]
+    sdgs: [1, 2, 5, 10, 11]
   - pillar: "Climate Change"
     image: pillar-climate-altamira-agroforest.jpg
     image_alt: "Floor of a cacao agroforest near Altamira, Pará, in the Brazilian Amazon, with seedlings among fallen leaves and tree trunks behind"
@@ -37,8 +37,8 @@ program:
     image: pillar-health-malawi-emr-nurse.jpg
     image_alt: "A health worker in a face mask logs in to the National EMR touchscreen at an HIV clinic in Malawi, with a barcode scanner and label printer beside her"
     credit: "Photo: Abdallah Chilungo"
-    text: "I study how organizations deliver healthcare to the people who are hardest to reach and how insecurity shapes where they operate. In sub-Saharan Africa, I examine how electronic medical records changed HIV/AIDS care in Malawi and how roadside clinics serve transport corridors. In Brazil, I study how the burden of the Zika epidemic was distributed across racial groups. I also study how terrorism, and the climate conditions related to it, shape where multinational corporations operate around the world."
-    sdgs: [3, 10, 16, 17]
+    text: "I study how organizations deliver healthcare to the hardest-to-reach populations and how they operate amid insecurity. In healthcare, I examine electronic medical records in HIV/AIDS clinics in Malawi, roadside clinics along African transport corridors, and how the burden of the Zika epidemic fell across racial groups in Brazil. In security, I study how terrorism shapes where multinational corporations operate around the world and how climate conditions such as drought relate to terrorism, using a global grid that links each place to its surroundings."
+    sdgs: [3, 8, 16, 17]
 
 # Names used for the SDG icon alt text.
 sdg_names:
