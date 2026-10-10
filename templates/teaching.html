@@ -6,6 +6,7 @@
     <p>{{ page.interests }}</p>
     {% set shown = [] %}{% for ph in page.photos or [] %}{% if ph.file and asset_exists('img/' ~ ph.file) %}{% set _ = shown.append(ph) %}{% endif %}{% endfor %}
     {% if shown %}
+    {% if page.photos_heading %}<h3>{{ page.photos_heading }}</h3>{% endif %}
     <div class="teaching-photos">
       {% for ph in shown %}
       <figure class="teaching-photo">

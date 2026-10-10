@@ -11,6 +11,7 @@ interests: "Strategic Management, Global Strategy, Global Challenges, Sustainabi
 
 # Class photos (files in assets/img/; use [] for none). Shown side by side at the same height on desktop, stacked on mobile.
 # Student name tents are pixelated in both photos so no names are legible.
+photos_heading: "Teaching in Action"
 photos:
   - file: teaching-mgmt6110-class-2022.jpg
     alt: "Leandro Pongeluppe sitting on the classroom floor with his Wharton MBA class of MGMT 6110 in a tiered lecture hall, Fall 2022"
