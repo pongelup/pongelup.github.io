@@ -35,11 +35,11 @@ program_heading: "Research Program"
 # inequality; Climate change; Healthcare and security.
 program:
   - pillar: "Poverty and inequality"
-    text: "how firms and public policy shape opportunity in favelas."
+    text: "Who gains when organizations expand opportunity in Brazilian favelas and disadvantaged communities?"
   - pillar: "Climate change"
-    text: "how firms and communities protect the Amazon rainforest and the oceans."
+    text: "How can firms and communities protect the Amazon and the oceans while creating value?"
   - pillar: "Healthcare and security"
-    text: "how technology and stakeholder management improve care in HIV/AIDS clinics in Africa, how the Zika epidemic affected families across racial groups in Brazil, and how terrorism and related climate conditions shape where multinational corporations operate."
+    text: "How do organizations reach underserved patients, and how does terrorism shape where multinationals operate?"
 program_more: "See the full research program"
 
 selected_heading: "Selected Publications"
