@@ -230,7 +230,9 @@ main { display: block; }
 }
 @media (max-width: 1080px) {
   .nav-toggle { display: block; }
-  .site-header { justify-content: flex-start; gap: 12px; padding: 0 14px; }
+  /* no backdrop-filter here: it would trap the fixed slide-out menu inside the 56px header */
+  .site-header { justify-content: flex-start; gap: 12px; padding: 0 14px;
+    -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(38,50,56,0.6); }
   .site-nav {
     position: fixed; top: 0; left: 0; bottom: 0; width: 260px; max-width: 80vw;
     background: #212121; padding: 64px 0 24px; transform: translateX(-100%);
@@ -238,7 +240,9 @@ main { display: block; }
   }
   .site-nav.open { transform: none; box-shadow: 2px 0 12px rgba(0,0,0,0.4); }
   .site-nav ul { flex-direction: column; gap: 0; }
-  .site-nav a { display: block; padding: 12px 24px; font-size: 16px; text-shadow: none; }
+  .site-nav a { display: block; padding: 15px 24px; font-size: 17px; text-shadow: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .site-header > .nav-toggle { padding: 10px; }
+  .nav-toggle svg { width: 28px; height: 28px; }
   .site-nav a[aria-current="page"] { background: rgba(255,255,255,0.08); }
   .nav-close { position: absolute; top: 12px; left: 14px; }
   .nav-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 55; }
