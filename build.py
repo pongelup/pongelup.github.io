@@ -181,6 +181,28 @@ def asset_exists(path):
     return bool(path) and (ROOT / "assets" / str(path).lstrip("/")).is_file()
 
 
+OWN_HOSTS = ("leandropongeluppe.com", "www.leandropongeluppe.com", "pongelup.github.io")
+
+
+def new_tab(html):
+    """Open external links and PDFs in a new tab (Leo, 2026-10-10); site navigation stays in the same tab."""
+    def fix(m):
+        tag = m.group(0)
+        if re.search(r"\starget=", tag):
+            return tag
+        href = re.search(r'\shref="([^"]*)"', tag)
+        if not href:
+            return tag
+        url = href.group(1)
+        host = urlparse(url).netloc.lower()
+        external = url.startswith(("http://", "https://", "//")) and host not in OWN_HOSTS
+        pdf = urlparse(url).path.lower().endswith(".pdf")
+        if not (external or pdf):
+            return tag
+        return tag[:-1] + ' target="_blank" rel="noopener">'
+    return re.sub(r"<a\s[^>]*>", fix, html)
+
+
 def build():
     site = load("data/site.yml")
     shared = {
@@ -210,6 +232,7 @@ def build():
             banner_credit=(page.get("banner_credit"), page.get("banner_credit_url"))
             if page.get("banner_credit") else BANNER_CREDIT.get(page.get("banner", ""), ("", "")), **shared)
         html = re.sub(r"\n\s*\n+", "\n", html)
+        html = new_tab(html)
         for out in outs:
             dest = ROOT / out
             dest.parent.mkdir(parents=True, exist_ok=True)
