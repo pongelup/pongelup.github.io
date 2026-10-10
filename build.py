@@ -233,6 +233,11 @@ def build():
             if page.get("banner_credit") else BANNER_CREDIT.get(page.get("banner", ""), ("", "")), **shared)
         html = re.sub(r"\n\s*\n+", "\n", html)
         html = new_tab(html)
+        # Version stamp on every CV link, so browsers and the CDN fetch the new PDF after each CV sync.
+        stamp = ROOT / "assets/cv/source_commit.txt"
+        if stamp.is_file():
+            html = html.replace("/assets/cv/Leandro_Pongeluppe_CV.pdf",
+                                f"/assets/cv/Leandro_Pongeluppe_CV.pdf?v={stamp.read_text().strip()[:7]}")
         for out in outs:
             dest = ROOT / out
             dest.parent.mkdir(parents=True, exist_ok=True)
