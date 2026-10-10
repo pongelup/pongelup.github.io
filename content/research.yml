@@ -8,7 +8,7 @@ last_update: "Last update: October 2026."
 
 interests_heading: "Research Interests"
 interests: >-
-  <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a>, Stakeholder Management, Non-market Strategy, Mixed Methods, and Global South.
+  <a href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a>, Stakeholder Management, Non-market Strategy, Mixed Methods, and Global South.
 
 # Research Program: three pillar cards (Poverty and Inequality; Climate Change; Healthcare and Security,
 # which holds the terrorism papers since 2026-10-09). Each card has an optional image on top (file in assets/img/;
@@ -16,7 +16,7 @@ interests: >-
 # assets/img/sdg/sdg_NN.png (for example sdg_01.png) and shown only when the file exists.
 # Working-paper results never go here; the papers themselves are listed below the cards.
 program_heading: "Research Program"
-program_intro: "My research is organized around three pillars, each tied to the United Nations <a href=\"https://sdgs.un.org/goals\">Sustainable Development Goals (SDGs)</a>."
+program_intro: "My research is organized around three pillars, each tied to the United Nations Sustainable Development Goals (SDGs)."
 program:
   - pillar: "Poverty and Inequality"
     image: pillar-poverty-rocinha-gavea.jpg
