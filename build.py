@@ -40,12 +40,23 @@ BANNER_ALT = {
     "banner-rocinha-panorama.jpg": "Panoramic view of the Rocinha favela in Rio de Janeiro, with mountains and the ocean behind it",
     "banner-altamira-agroforest.jpg": "Floor of a cacao agroforest near Altamira, Pará, in the Brazilian Amazon, with seedlings among fallen leaves",
     "banner-para-2012-river-rainbow.jpg": "Rainbow over a river lined with mangrove forest in Pará, in the Brazilian Amazon, with a small house at the water's edge",
+    "banner-rio-sugarloaf.jpg": "View of Rio de Janeiro from Sugarloaf Mountain: Copacabana beach, the city and Christ the Redeemer on Corcovado",
+    "banner-salvador-beach-boats.jpg": "Fishing boats on a small beach in Salvador, Bahia, framed by almond trees, with a blue-and-white house and the ocean behind",
+    "banner-mozambique-2011.jpg": "Community members celebrating with visitors during a 2011 field visit in Mozambique",
+    "banner-pigments.jpg": "Wooden tray of colored pigment powders arranged in a grid",
+    "banner-world-cup-philadelphia.jpg": "Brazil fans in a full stadium in Philadelphia at a 2026 FIFA World Cup match",
 }
 
 # Photo credits shown on the banner (text, link). A page can override with "banner_credit:" and
 # "banner_credit_url:" in its content/<page>.yml.
 BANNER_CREDIT = {
     "banner-rocinha-gavea-drone.jpg": ("Photo: Johnny Miller / Unequal Scenes", "https://unequalscenes.com"),
+    "banner-altamira-agroforest.jpg": ("Photo: Leandro Pongeluppe", ""),
+    "banner-rio-sugarloaf.jpg": ("Photo: Leandro Pongeluppe", ""),
+    "banner-salvador-beach-boats.jpg": ("Photo: Leandro Pongeluppe", ""),
+    "banner-mozambique-2011.jpg": ("Photo: Kassia Watanabe", ""),
+    "banner-pigments.jpg": ("Photo: Leandro Pongeluppe", ""),
+    "banner-world-cup-philadelphia.jpg": ("Photo: Leandro Pongeluppe", ""),
 }
 
 # page key -> (template, output paths relative to ROOT, canonical path)
