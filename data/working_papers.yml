@@ -69,7 +69,7 @@ groups:
 
       - title: "Global Footprint of Desalination in the Oceans"
         coauthors: "in collaboration with Xinni Wu, Ilze Kivleniece, Sérgio Lazzarini, and Hugo N. Ulloa."
-        status: "Submitted to Nature Sustainability."
+        status: "Submitted to Nature Water."
         description: "We study the environmental footprint of desalination plants on the surrounding oceans worldwide. We link the locations and start dates of desalination plants to satellite measurements of ocean conditions, such as salinity, sea surface temperature, and chlorophyll, in a staggered difference-in-differences design."
         # Previous figure (point map of plant locations), kept in assets/img but no longer displayed: wp-desal2-plants-map.png
         # Triangle layout (a and b on top, c centered below) built from the paper's panel files
