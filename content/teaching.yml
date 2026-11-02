@@ -72,7 +72,7 @@ slides_heading: "Class Slides<sup>**</sup>"
 slides_intro: "Wharton MBA MGMT 6110: Managing the Established Enterprise (Global Module)"
 slides_semester: "Fall 2026"
 slides:
-  - { url: "/assets/slides/MGMT6110_Class_01_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Ferrero Group", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_01_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Ferrero Group", semester: "Fall 2026" }
   - { url: "/assets/slides/MGMT6110_Class_02_The_Institutional_Environment_in_Global_Markets.pdf", title: "Class 2. The Institutional Environment in Global Markets", case: "Corruption in International Business", semester: "Fall 2026" }
   - { url: "/assets/slides/MGMT6110_Class_03_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Markets", case: "European Super League", semester: "Spring 2026" }
   - { url: "/assets/slides/MGMT6110_Class_04_International_Strategies_and_Governance_Structures.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara", semester: "Spring 2026" }
