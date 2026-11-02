@@ -8,6 +8,24 @@
 
 english:
 - lang: en
+  outlet: BrightSurf.
+  title: "When the Schuylkill swallowed the city: Lessons from Hurricane Ida's historic flood."
+  url: https://www.brightsurf.com/news/LDE0VP08/when-the-schuylkill-swallowed-the-city-lessons-from-hurricane-idas-historic-flood.html
+  paper: flood-tipping-points
+  date: May 13th, 2026.
+- lang: en
+  outlet: BrightSurf.
+  title: Electronic medical records help save lives of HIV patients.
+  url: https://www.brightsurf.com/news/LN2P7741/electronic-medical-records-help-save-lives-of-hiv-patients.html
+  paper: emr-hiv-malawi
+  date: December 22nd, 2025.
+- lang: en
+  outlet: Positively Positive.
+  title: Electronic medical records help save lives of HIV patients.
+  url: https://positivelypositive.ca/hiv-aids-news-16/Electronic_medical_records_help_save_lives_of_HIV_patients.html
+  paper: emr-hiv-malawi
+  date: December 18th, 2025.
+- lang: en
   outlet: PreventionWeb (UN Office for Disaster Risk Reduction).
   title: "USA: Lessons from Hurricane Ida's historic flood."
   url: https://www.preventionweb.net/news/when-schuylkill-swallowed-city-lessons-hurricane-idas-historic-flood

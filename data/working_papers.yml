@@ -80,6 +80,14 @@ groups:
 
   - topic: "Healthcare and Security"
     papers:
+      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
+        coauthors: "in collaboration with Leandro Nardi."
+        status: "Submitted to Strategic Management Journal."
+        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
+        image: wp-terrorism-gtd-map.png
+        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
+        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
+
       - title: "Stakeholder Architecture under Resource Constraints: A Configurational Approach to Healthcare Provision in Sub-Saharan Africa"
         coauthors: "in collaboration with Aline Gatignon, Julien Clément, and Luk N. Van Wassenhove."
         status: "Working paper."
@@ -98,14 +106,6 @@ groups:
         image: wp-zika-map-and-cases.png
         image_alt: "Two panels: (a) map of Brazilian municipalities shaded by the microcephaly rate per 10,000 live births in 2016, with Pernambuco outlined; (b) bar chart of recorded Zika cases by epidemiological week, 2016 to 2019"
         caption: "The setting: (a) microcephaly rate per 10,000 live births by municipality, 2016, Pernambuco outlined (SINASC/DATASUS, ICD-10 Q02); (b) recorded Zika cases by epidemiological week, 2016 to 2019 (SINAN)."
-
-      - title: "Grid-Cells, Terrorism, and Multinational Corporations"
-        coauthors: "in collaboration with Leandro Nardi."
-        status: "Submitted to Strategic Management Journal."
-        description: "We map terrorist attacks and multinational subsidiaries onto a worldwide grid of one-degree cells observed every year for almost three decades. Using panel models with spatial corrections, we examine how attacks inside a cell and in its surroundings relate to where multinational corporations locate."
-        image: wp-terrorism-gtd-map.png
-        image_alt: "World map of one-degree grid cells shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, above a bar chart of the yearly number of attacks"
-        caption: "The setting: one-degree grid cells worldwide, shaded by the fraction of years from 1993 to 2020 with at least one terrorist attack, and the yearly number of attacks."
 
       - title: "The Influence of Climate Change on Terrorism"
         coauthors: "in collaboration with Leandro Nardi."
