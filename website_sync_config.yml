@@ -6,7 +6,7 @@
 #   _review/PENDING_SYNC_<YYYY-MM>.md, and leaves an Outlook DRAFT for Leo (never sent).
 #   Each time Leo approves a pending sync, Claude merges it, pushes, and lowers this number by one.
 #   At 0, the monthly run publishes directly (site push, CV push, then sync_cv.py).
-approved_runs_remaining: 2
+approved_runs_remaining: 1
 
 # media_search: monthly search for new media mentions (English and Portuguese), a separate Claude step
 #   (website_media_search_prompt.md) that adds verified items to the CV (sections/09_media.tex) and to
