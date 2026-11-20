@@ -74,9 +74,9 @@ slides_semester: "Fall 2026"
 slides:
   - { url: "/assets/slides/MGMT6110_Class_01_Mapping_the_Global_Arena.pdf", title: "Class 1. Mapping the Global Arena", case: "Ferrero Group", semester: "Fall 2026" }
   - { url: "/assets/slides/MGMT6110_Class_02_The_Institutional_Environment_in_Global_Markets.pdf", title: "Class 2. The Institutional Environment in Global Markets", case: "Corruption in International Business", semester: "Fall 2026" }
-  - { url: "/assets/slides/MGMT6110_Class_03_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Markets", case: "European Super League", semester: "Spring 2026" }
-  - { url: "/assets/slides/MGMT6110_Class_04_International_Strategies_and_Governance_Structures.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara", semester: "Spring 2026" }
-  - { url: "/assets/slides/MGMT6110_Class_05_International_Strategies_and_Entry_Modes.pdf", title: "Class 5. International Strategies and Entry Modes", case: "Walmart", semester: "Spring 2026" }
-  - { url: "/assets/slides/MGMT6110_Class_06_Institutional_Voids_Political_Risk_and_Business_Groups.pdf", title: "Class 6. Institutional Voids, Political Risk, and Business Groups", case: "McDonalds and Tata Group", semester: "Spring 2026" }
-  - { url: "/assets/slides/MGMT6110_Class_07_Stakeholder_Management_Environmental_Externalities.pdf", title: "Class 7. Stakeholder Management, Environmental Externalities, and Innovation for the Bottom of the Pyramid", case: "Natura Co", semester: "Spring 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_03_Distances_in_Global_Markets.pdf", title: "Class 3. Distances in Global Markets", case: "European Super League", semester: "Fall 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_04_International_Strategies_and_Governance_Structures.pdf", title: "Class 4. International Strategies and Governance Structures", case: "Apple and Zara", semester: "Fall 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_05_International_Strategies_and_Entry_Modes.pdf", title: "Class 5. International Strategies and Entry Modes", case: "Walmart", semester: "Fall 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_06_Institutional_Voids_Political_Risk_and_Business_Groups.pdf", title: "Class 6. Institutional Voids, Political Risk, and Business Groups", case: "McDonalds and Tata Group", semester: "Fall 2026" }
+  - { url: "/assets/slides/MGMT6110_Class_07_Stakeholder_Management_Environmental_Externalities.pdf", title: "Class 7. Stakeholder Management, Environmental Externalities, and Innovation for the Bottom of the Pyramid", case: "Natura Co", semester: "Fall 2026" }
 slides_note: "** Copyrights of the author. Permission for use may be granted upon reasonable request."
